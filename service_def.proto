@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+message Empty {}
+
+message User {
+    string name = 1;
+    int32 age = 2;
+}
+
+message Clock {
+    string full_date = 1;
+}
+
+message LightState {
+    string light_details = 1;
+}
+
+service UserService {
+    rpc GetUser (Empty) returns (User) {}
+}
+
+service Lights {
+    rpc SwitchLight (Empty) returns (LightState) {}
+}
+
+service Time {
+    rpc GetCurrentTime (Empty) returns (Clock) {}
+}
