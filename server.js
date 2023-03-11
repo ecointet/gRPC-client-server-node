@@ -15,7 +15,7 @@ const options = {
     oneofs: true,
   };
   
-  const host = "127.0.0.1:5000";
+  const host = "0.0.0.0:5000";
   const pkgDefs = protoLoader.loadSync(PROTO_FILE, options);
   
   //load Definition into gRPC

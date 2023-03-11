@@ -1,5 +1,5 @@
 //dependencies
-const { ExponentialRetry } = require("@google-cloud/pubsub/build/src/exponential-retry");
+//const { ExponentialRetry } = require("@google-cloud/pubsub/build/src/exponential-retry");
 const grpc = require("@grpc/grpc-js");
 const protoLoader = require("@grpc/proto-loader");
 

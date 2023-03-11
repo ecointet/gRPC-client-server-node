@@ -8,8 +8,8 @@ Simple app to demonstrate a Node.JS gRPC server and client.
 
 `node server.js`
 
-don't forget to edit the host name and port
->   const host = "127.0.0.1:5000";
+if needed, edit the host name and port
+>   const host = "0.0.0.0:5000";
 
 ###2 - CLIENT SIDE
 
