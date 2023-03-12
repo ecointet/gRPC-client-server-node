@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+message Empty {}
+
+message User {
+    string name = 1;
+    int32 age = 2;
+}
+
+message Clock {
+    string full_date = 1;
+}
+
+message LightState {
+    string light_details = 1;
+}
+
+service UserService {
+    rpc GetUser (Empty) returns (User) {}
+}
+
+service Lights {
+    rpc SwitchLight (Empty) returns (LightState) {}
+    rpc TurnOffAll (Empty) returns (LightState) {}
+    rpc TurnOnAll (Empty) returns (LightState) {}
+    rpc Dim (Empty) returns (LightState) {}
+}
+
+service Security {
+    rpc Lock (Empty) returns (Clock) {}
+    rpc UnLock (Empty) returns (Clock) {}
+    rpc SetMotion (Empty) returns (Clock) {}
+}
+
+service Garden {
+    rpc OpenGate (Empty) returns (Clock) {}
+    rpc CloseGate (Empty) returns (Clock) {}
+    rpc GetWeather (Empty) returns (Clock) {}
+}
+
+service Time {
+    rpc GetCurrentTime (Empty) returns (Clock) {}
+}

@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "d2601dcf-952f-431f-a968-8294c924f2a2",
+		"name": "Lights",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26017054-d2601dcf-952f-431f-a968-8294c924f2a2"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "b18fba67-b6e8-481d-b46a-537382db4384",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://homey",
+					"protocol": "https",
+					"host": [
+						"homey"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4312d3e9-82f1-4cfb-9951-403233e5426d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1c16c640-680d-4809-b9e5-b54636967a37",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
