@@ -44,7 +44,7 @@
 							"else",
 							"",
 							"",
-							"function displayTemp(txt, city)",
+							"function displayTemp(value, city)",
 							"{",
 							" console.log(\"The Temperature is \"+pm.environment.get(\"location\"));",
 							"}"
@@ -127,12 +127,12 @@
 	],
 	"variable": [
 		{
-			"id": "d84facfd-e117-41cc-aa93-d022fb3959d7",
+			"id": "e2c81cd6-17e4-4b40-9b86-d5b6f951c9c4",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "c26174a5-f430-4f28-8fa7-c28094953df5",
+			"id": "7c0d80bb-9ed1-44bf-9564-cd914bd7b2bb",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
