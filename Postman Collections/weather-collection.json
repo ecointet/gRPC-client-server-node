@@ -29,7 +29,6 @@
 							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
-							"    {",
 							"        displayTemp(newCountry, pm.environment.set(\"location\", \"Bangalore, IND\"));",
 							"        ",
 							"        ",
@@ -40,7 +39,7 @@
 							"        pm.environment.set(\"location\", \"London, UK\");",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
-							"    ",
+							"",
 							"    postman.setNextRequest(\"Get Current Weather\");",
 							"}",
 							"",
@@ -48,6 +47,7 @@
 							"function displayTemp(newCountry)",
 							"{",
 							" console.log(\"The Temperature is \"+pm.environment.get(\"temp\")+\"F in \"+pm.environment.get(\"location\"));",
+							" pm.environment.set(\"location\", \"London, UK\");",
 							"}"
 						],
 						"type": "text/javascript"
@@ -128,12 +128,12 @@
 	],
 	"variable": [
 		{
-			"id": "7eea6a8f-75ce-4624-be71-f888384fa5ca",
+			"id": "cb87d16f-7037-4d22-b692-040ffca3fbdb",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "9d580ef2-cffd-4949-bcc7-ee5f60f92edb",
+			"id": "3fc77e0b-5cfc-47d2-bdda-ccb1e4d43739",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
