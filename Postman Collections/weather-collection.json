@@ -17,5 +17,12 @@
 			},
 			"response": []
 		}
+	],
+	"variable": [
+		{
+			"id": "8554f439-c940-4359-9a15-aeea181ba2a2",
+			"key": "APIKEY",
+			"value": "1a47597383a958fd7ab1f18a2a7a80dc"
+		}
 	]
 }
