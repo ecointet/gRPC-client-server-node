@@ -42,11 +42,11 @@
 							"    }",
 							"}",
 							"else",
-							"console.log(\"The Final Temperature in \"+pm.environment.get(\"location\"));",
+							"",
 							"",
 							"function displayTemp(value)",
 							"{",
-							"    ",
+							" console.log(\"The Final Temperature in \"+pm.environment.get(\"location\"));",
 							"}"
 						],
 						"type": "text/javascript"
@@ -127,12 +127,12 @@
 	],
 	"variable": [
 		{
-			"id": "aaaa6ece-b919-48a8-8bd5-d7601457a418",
+			"id": "a93b22eb-c2b5-4086-9dad-0eaed8f606a0",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "19750469-2b3d-435a-824b-205ec0ad1eb9",
+			"id": "57ce63b3-a04d-46c9-949f-1b3e2300da6d",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
