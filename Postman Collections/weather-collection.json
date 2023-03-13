@@ -25,10 +25,13 @@
 							"});",
 							"",
 							"if(pm.environment.get(\"temp\") > 50){",
-							"    console.log(\"Temperature higher than 50\");",
+							"    console.log(\"Temperature is over 60F\");",
+							"    pm.environment.set(\"location\", \"Bangalore, IND\");",
 							"  //  postman.setNextRequest(\"Get Current Weather\");",
 							"} else {",
-							"    console.log(\"Temperature lower than 50\");",
+							"    console.log(\"Temperature is below 60F\")",
+							"    pm.environment.set(\"location\", \"London, UK\");",
+							"    ;",
 							"   // postman.setNextRequest(\"Get Current Weather\");",
 							"}"
 						],
@@ -55,7 +58,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=London, UK&units=imperial",
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -74,7 +77,7 @@
 						},
 						{
 							"key": "q",
-							"value": "London, UK"
+							"value": "{{location}}"
 						},
 						{
 							"key": "units",
@@ -110,7 +113,7 @@
 	],
 	"variable": [
 		{
-			"id": "3bd66090-4977-4544-b456-bb9032791c3a",
+			"id": "f6cc332f-eafe-4b8b-af7f-f2990a539a6f",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
