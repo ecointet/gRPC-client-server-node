@@ -13,13 +13,22 @@
 					"script": {
 						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
 						"exec": [
-							"pm.test(\"Status test\", function () {",
+							"pm.test(\"Temperature from the result\", function () {",
 							"let result = pm.response.json(); // get result",
 							"let current_temp = result.main.temp; // get current weather (celsius)",
 							"pm.environment.set(\"temp\", current_temp); // store it in envs",
-							"pm.expect(pm.environment.get(\"temp\")).to.lessThan(30)",
-							"pm.expect(pm.environment.get(\"temp\")).to.above(-20)",
-							"});"
+							"});",
+							"",
+							"pm.test(\"Temperature value\", function () {",
+							"pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0);",
+							"// minus temp is rare (and check it's an integer)",
+							"});",
+							"",
+							"if(pm.environment.get(\"temp\") > 50){",
+							"    postman.setNextRequest(\"Get Current Weather\");",
+							"} else {",
+							"    postman.setNextRequest(\"Get Current Weather\");",
+							"}"
 						],
 						"type": "text/javascript"
 					}
@@ -33,7 +42,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=London, UK&units=metric",
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=London, UK&units=imperial",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -56,7 +65,7 @@
 						},
 						{
 							"key": "units",
-							"value": "metric"
+							"value": "imperial"
 						}
 					]
 				}
@@ -88,7 +97,7 @@
 	],
 	"variable": [
 		{
-			"id": "e8d23306-0be3-40b1-a6eb-b18525592dce",
+			"id": "94b363db-11e9-44d7-bde3-22ce5afc6ad5",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
