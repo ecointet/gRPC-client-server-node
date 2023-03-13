@@ -37,6 +37,7 @@
 							"    }",
 							"    else",
 							"    {",
+							"        displayTemp(false)",
 							"        console.log(\"Temperature in \"+pm.environment.get(\"location\")+\" is below 60F\");",
 							"        pm.environment.set(\"location\", \"London, UK\");",
 							"        postman.setNextRequest(\"Get Current Weather\");",
@@ -128,12 +129,12 @@
 	],
 	"variable": [
 		{
-			"id": "0cff8520-ccf6-420f-ae83-5ca5f0e068e8",
+			"id": "d2a5acc6-dfde-4343-a8db-aaf6ad3e186e",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "6982c8e4-5019-4909-9d15-44cbb9254dc8",
+			"id": "206e40ce-9090-45aa-9ddc-2d579b571f3f",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
