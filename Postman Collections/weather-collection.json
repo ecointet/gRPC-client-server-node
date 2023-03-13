@@ -17,7 +17,6 @@
 							"{",
 							"    let result = pm.response.json(); // get result",
 							"    let current_temp = result.main.temp; // get current weather (celsius)",
-							"    current_temp = 15;",
 							"    pm.environment.set(\"temp\", current_temp); // store it in envs",
 							"});",
 							"",
@@ -127,18 +126,18 @@
 	],
 	"variable": [
 		{
-			"id": "d038bf58-bc22-4ab6-942e-6fa9fab0e4d0",
+			"id": "0f51468a-4911-4973-8535-298c204a7d20",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "d9b3c105-0849-4692-8456-93ef1bacfc23",
+			"id": "a9422dd5-8fcc-4ebf-97c3-44328a872a56",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "22a0b76a-c322-46b4-9a41-7c1c0ab55f36",
+			"id": "0e76d4a3-1a72-47bd-b3a6-f55dbaeb3622",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
