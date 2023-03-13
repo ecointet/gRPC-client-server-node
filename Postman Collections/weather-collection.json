@@ -30,7 +30,7 @@
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
 							"    {",
-							"        displayTemp(value, city)",
+							"        displayTemp(false)",
 							"        console.log(\"Temperature in \"+pm.environment.get(\"location\")+\" is over 60F\");",
 							"        pm.environment.set(\"location\", \"Bangalore, IND\");",
 							"        postman.setNextRequest(\"Get Current Weather\");",
@@ -128,12 +128,12 @@
 	],
 	"variable": [
 		{
-			"id": "9b6eff79-eec7-4e93-98d0-652837ed6786",
+			"id": "0cff8520-ccf6-420f-ae83-5ca5f0e068e8",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "445d9de5-67ab-44a7-a55a-dd1b786940da",
+			"id": "6982c8e4-5019-4909-9d15-44cbb9254dc8",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
