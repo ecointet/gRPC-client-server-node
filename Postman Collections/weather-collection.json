@@ -16,18 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "appid",
-							"value": "{{APIKEY}}",
-							"type": "text"
-						},
-						{
-							"key": "q",
-							"value": "London,UK",
-							"type": "text"
-						}
-					]
+					"urlencoded": []
 				},
 				"url": "https://api.openweathermap.org/data/2.5/weather"
 			},
@@ -58,7 +47,7 @@
 	],
 	"variable": [
 		{
-			"id": "f803d382-3440-4f9d-b394-60d4b482b8d6",
+			"id": "600b755e-f1ff-41eb-8aa3-b6220b59d437",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
