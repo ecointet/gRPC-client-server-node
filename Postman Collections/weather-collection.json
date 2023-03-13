@@ -27,6 +27,7 @@
 							"});",
 							"",
 							"console.log(pm.request.url.query.get(\"q\"));",
+							"console.log(pm.environment.get(\"location\"));",
 							"if (pm.request.url.query.get(\"q\") == pm.environment.get(\"location\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
@@ -121,12 +122,12 @@
 	],
 	"variable": [
 		{
-			"id": "924a8cb1-d0b3-4b48-8688-b99fcc578c44",
+			"id": "a8732425-c781-49c5-b8cb-33c2ead08767",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "bbef7637-262a-4b8b-bd08-0ebba5fb2181",
+			"id": "b17c6e9d-521d-47c8-a956-ad2466c279ae",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
