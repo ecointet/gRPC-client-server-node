@@ -51,7 +51,7 @@
 						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
 						"exec": [
 							"if (!pm.environment.has('location'))",
-							"    pm.environment.set(\"location\", \"San Francisco, USA\");"
+							"    pm.environment.set(\"location\", pm.variables.get(\"city\"));"
 						],
 						"type": "text/javascript"
 					}
@@ -120,12 +120,12 @@
 	],
 	"variable": [
 		{
-			"id": "8e11dee0-3334-4b9d-b9e1-78223966e4c8",
+			"id": "ee84b3de-902f-4350-b73f-e39f431e339a",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "07ff00b7-4102-499f-9aa9-f174bc4a2caf",
+			"id": "56c79888-529a-4652-b24e-acd08e205113",
 			"key": "City",
 			"value": "San Francisco, USA",
 			"type": "string"
