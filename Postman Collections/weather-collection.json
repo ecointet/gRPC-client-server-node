@@ -120,12 +120,12 @@
 	],
 	"variable": [
 		{
-			"id": "4f6cfde0-4b2a-47bb-b265-a1a5709d7857",
+			"id": "85946dcc-a78b-4f61-84de-ee933bddda80",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "a47c735b-037e-4308-82f1-44dc2e09e1c1",
+			"id": "e76c6962-fd89-4622-83bc-17581eabd6db",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
