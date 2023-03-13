@@ -46,7 +46,7 @@
 							"",
 							"function displayTemp(value, city)",
 							"{",
-							" console.log(\"The Temperature is \"+pm.environment.get(\"location\"));",
+							" console.log(\"The Temperature is \"+value\"F in \"+city);",
 							"}"
 						],
 						"type": "text/javascript"
@@ -127,12 +127,12 @@
 	],
 	"variable": [
 		{
-			"id": "e2c81cd6-17e4-4b40-9b86-d5b6f951c9c4",
+			"id": "4813cae6-c20c-4c59-89c6-428b279931e1",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "7c0d80bb-9ed1-44bf-9564-cd914bd7b2bb",
+			"id": "b730dc88-80fc-462d-8cd2-7462e87d8fb1",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
