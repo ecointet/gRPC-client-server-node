@@ -22,7 +22,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f3877180-3aa9-45a1-8b8a-e41d8c66b530",
+				"id": "74021c96-78f5-49ae-ab85-a92c58dbf302",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -32,7 +32,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "929f7d45-34c2-4055-aa0c-6db6bfd2e24b",
+				"id": "a9959b21-a309-4c21-a319-09d527999719",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -42,9 +42,9 @@
 	],
 	"variable": [
 		{
-			"id": "6684f19f-5dd5-4efc-815c-0d7e9c4958ad",
+			"id": "a5f1a8b8-2069-4cae-afd0-d4d5387576fb",
 			"key": "APIKEY",
-			"value": "cba91d842d23631b5efcdeefd17f7678"
+			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
 	]
 }
