@@ -110,7 +110,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
+							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=San Francisco, US&units=imperial",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -129,7 +129,7 @@
 								},
 								{
 									"key": "q",
-									"value": "{{location}}"
+									"value": "San Francisco, US"
 								},
 								{
 									"key": "units",
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "2d83b464-a9f9-437b-9084-e0c196cbd5cb",
+			"id": "17774c70-1194-4dfc-b797-5f5de244ee40",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "ba18b9bd-f845-43f5-85fa-41f8a20ff9c7",
+			"id": "71dbda9c-5153-4a8c-ab7b-d773432c2c6f",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "6f220b54-f48c-47e6-be4c-383228c253ac",
+			"id": "5b89667a-f967-4890-95fa-8325511f2466",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
