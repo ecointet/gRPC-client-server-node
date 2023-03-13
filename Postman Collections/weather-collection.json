@@ -48,7 +48,7 @@
 							"{",
 							" console.log(\"The Temperature is \"+pm.environment.get(\"temp\")+\"F in \"+pm.environment.get(\"location\"));",
 							" ",
-							" pm.environment.set(\"location\", \"London, UK\");",
+							" pm.environment.set(\"location\", newCountry);",
 							" postman.setNextRequest(\"Get Current Weather\");",
 							"}"
 						],
@@ -130,12 +130,12 @@
 	],
 	"variable": [
 		{
-			"id": "8074f3de-838c-4c80-a291-dc92c791f652",
+			"id": "0fea16d2-8bd5-4c71-90f7-3e21af5e121a",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "e6d6615e-78f8-4430-88d1-27adc228f6b8",
+			"id": "45739558-5bfb-49b1-b1c4-8ee91930670f",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
