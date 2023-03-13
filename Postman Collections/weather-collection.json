@@ -100,7 +100,49 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "6f88461d-c68d-4980-b0df-dd044db671df",
+					"name": "Get Current Weather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "appid",
+									"value": "{{APIKEY}}"
+								},
+								{
+									"key": "q",
+									"value": "{{location}}"
+								},
+								{
+									"key": "units",
+									"value": "imperial"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		}
 	],
 	"event": [
@@ -127,18 +169,18 @@
 	],
 	"variable": [
 		{
-			"id": "fb252bc4-4d3b-4780-bfe3-097c8e486fc1",
+			"id": "ef952052-837e-4437-9bb1-9dc4f692f692",
 			"key": "APIKEY",
 			"value": "{{APIKEY}}"
 		},
 		{
-			"id": "0b1a4ec9-c954-4303-a9e4-7f1ccee4d0b0",
+			"id": "e08ac524-fb66-43cc-b826-27754de50129",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "9523ed05-1402-4fca-88c5-f274ba3a3f94",
+			"id": "f9f33b28-9701-4723-8a9c-7051f8985fa3",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
