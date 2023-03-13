@@ -22,8 +22,7 @@
 							"",
 							"pm.test(\"Temperature value\", function ()",
 							"{",
-							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0);",
-							"    // minus temp is rare (and check it's an integer)",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
 							"});",
 							"",
 							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
@@ -35,7 +34,6 @@
 							"",
 							"    postman.setNextRequest(\"Get Current Weather\");",
 							"}",
-							"",
 							"",
 							"function displayTemp(newCountry)",
 							"{",
@@ -122,12 +120,12 @@
 	],
 	"variable": [
 		{
-			"id": "28f81f57-95ba-477a-8d46-936a7246d724",
+			"id": "38fec538-cd5c-4ebb-9cf2-db440919b86a",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "70922dfa-5e58-471d-8905-9cbf831cf6f0",
+			"id": "4be8acc9-4b39-4955-8cae-d84ff7810f77",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
