@@ -26,8 +26,6 @@
 							"    // minus temp is rare (and check it's an integer)",
 							"});",
 							"",
-							"console.log(pm.request.url.query.get(\"q\"));",
-							"console.log(pm.environment.get(\"location\"));",
 							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
@@ -122,12 +120,12 @@
 	],
 	"variable": [
 		{
-			"id": "e8180ee5-ead7-4222-92d4-eb45bcf5350f",
+			"id": "581db673-ea1c-4a85-a32f-dad3f17b05ca",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "9a10665c-12aa-4300-9d67-c69e7abddd45",
+			"id": "29c2a48f-26f3-4352-bfe6-1b608a720453",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
