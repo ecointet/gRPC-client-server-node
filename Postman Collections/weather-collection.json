@@ -33,7 +33,7 @@
 							"        displayTemp(\"London, UK\");",
 							"}",
 							"else",
-							"    displayTemp(newCountry)",
+							"    displayTemp(null)",
 							"",
 							"function displayTemp(newCountry)",
 							"{",
@@ -120,12 +120,12 @@
 	],
 	"variable": [
 		{
-			"id": "e91449c7-5c77-4c13-a24e-fc824696e1a2",
+			"id": "0d274143-d12b-4d19-b8f2-05f68769f8c8",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "a40f0a5d-d509-4172-a19b-a51b79f518e2",
+			"id": "c63b28ab-40dc-46bb-aacd-baf6bc80d4c6",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
