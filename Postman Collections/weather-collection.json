@@ -27,12 +27,12 @@
 							"if(pm.environment.get(\"temp\") > 50){",
 							"    console.log(\"Temperature is over 60F\");",
 							"    pm.environment.set(\"location\", \"Bangalore, IND\");",
-							"  //  postman.setNextRequest(\"Get Current Weather\");",
+							"    postman.setNextRequest(\"Get Current Weather\");",
 							"} else {",
 							"    console.log(\"Temperature is below 60F\")",
 							"    pm.environment.set(\"location\", \"London, UK\");",
 							"    ;",
-							"   // postman.setNextRequest(\"Get Current Weather\");",
+							"    postman.setNextRequest(\"Get Current Weather\");",
 							"}"
 						],
 						"type": "text/javascript"
@@ -113,7 +113,7 @@
 	],
 	"variable": [
 		{
-			"id": "f6cc332f-eafe-4b8b-af7f-f2990a539a6f",
+			"id": "d698d40e-a8a4-4dd9-9e24-3a0c2fa620d1",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
