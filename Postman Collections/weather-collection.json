@@ -18,11 +18,33 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f3877180-3aa9-45a1-8b8a-e41d8c66b530",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "929f7d45-34c2-4055-aa0c-6db6bfd2e24b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "8554f439-c940-4359-9a15-aeea181ba2a2",
+			"id": "6f164737-9af0-4cb3-a4e0-3fc3c33ddeaa",
 			"key": "APIKEY",
-			"value": "1a47597383a958fd7ab1f18a2a7a80dc"
+			"value": "cba91d842d23631b5efcdeefd17f7678"
 		}
 	]
 }
