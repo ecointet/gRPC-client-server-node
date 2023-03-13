@@ -24,15 +24,18 @@
 							"// minus temp is rare (and check it's an integer)",
 							"});",
 							"",
-							"if(pm.environment.get(\"temp\") > 50){",
-							"    console.log(\"Temperature is over 60F\");",
-							"    pm.environment.set(\"location\", \"Bangalore, IND\");",
-							"    postman.setNextRequest(\"Get Current Weather\");",
-							"} else {",
-							"    console.log(\"Temperature is below 60F\")",
-							"    pm.environment.set(\"location\", \"London, UK\");",
-							"    ;",
-							"    postman.setNextRequest(\"Get Current Weather\");",
+							"if (pm.response.json().name != \"San Francisco\")",
+							"{",
+							"    if(pm.environment.get(\"temp\") > 50){",
+							"        console.log(\"Temperature is over 60F\");",
+							"        pm.environment.set(\"location\", \"Bangalore, IND\");",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    } else {",
+							"        console.log(\"Temperature is below 60F\")",
+							"        pm.environment.set(\"location\", \"London, UK\");",
+							"        ;",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    }",
 							"}"
 						],
 						"type": "text/javascript"
@@ -113,7 +116,7 @@
 	],
 	"variable": [
 		{
-			"id": "d698d40e-a8a4-4dd9-9e24-3a0c2fa620d1",
+			"id": "e7e2bb5a-55c0-4b52-a817-6b7f7bc6465e",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
