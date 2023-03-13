@@ -34,6 +34,8 @@
 							"",
 							"    postman.setNextRequest(\"Get Current Weather\");",
 							"}",
+							"else",
+							"    displayTemp(newCountry)",
 							"",
 							"function displayTemp(newCountry)",
 							"{",
@@ -120,12 +122,12 @@
 	],
 	"variable": [
 		{
-			"id": "38fec538-cd5c-4ebb-9cf2-db440919b86a",
+			"id": "a05366f6-7bef-4ae8-a37a-28983edf6edf",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "4be8acc9-4b39-4955-8cae-d84ff7810f77",
+			"id": "2feaae40-c0c7-4806-b22a-9c9d03bb00e4",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
