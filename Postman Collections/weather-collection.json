@@ -19,6 +19,7 @@
 							"    let current_temp = result.main.temp; // get current weather (celsius)",
 							"    current_temp = -20;",
 							"    pm.environment.set(\"temp\", current_temp); // store it in envs",
+							"    postman.setNextRequest(null)",
 							"});",
 							"",
 							"pm.test(\"Temperature value\", function ()",
@@ -127,18 +128,18 @@
 	],
 	"variable": [
 		{
-			"id": "92d5ab6a-c08a-4bbd-9092-afbdfa0c35b8",
+			"id": "3e05936b-ee2f-45de-b2c4-2ac1af40b580",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "93529582-88be-41f8-bb93-f38ae0a68c62",
+			"id": "72e1bccb-3fef-409a-b180-7904c3df6d16",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "35077633-c1a5-4d9a-b51d-bab427b30530",
+			"id": "cad417f6-dc54-4132-b41d-b6c8cb349283",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
