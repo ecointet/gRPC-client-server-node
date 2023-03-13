@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "c0358480-52f2-44e0-be10-745ee2c6fe24",
 		"name": "Weather API by ecointet",
+		"description": "A Full API Collection to get a city temperature (depending of another city)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -170,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "76697207-f4cc-46e1-8b67-7989f5e75caa",
+			"id": "2d83b464-a9f9-437b-9084-e0c196cbd5cb",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "6f1b71de-b2d6-4127-b60d-5e967169ad1d",
+			"id": "ba18b9bd-f845-43f5-85fa-41f8a20ff9c7",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "9c977302-fffa-40a5-9d36-980fb4f2d506",
+			"id": "6f220b54-f48c-47e6-be4c-383228c253ac",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
