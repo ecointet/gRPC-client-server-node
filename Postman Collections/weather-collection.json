@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Get Current Weather",
 			"id": "0d2a5df3-5775-4594-9529-6d94aae03800",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -42,7 +42,7 @@
 	],
 	"variable": [
 		{
-			"id": "6f164737-9af0-4cb3-a4e0-3fc3c33ddeaa",
+			"id": "6684f19f-5dd5-4efc-815c-0d7e9c4958ad",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		}
