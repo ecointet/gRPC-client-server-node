@@ -123,18 +123,18 @@
 	],
 	"variable": [
 		{
-			"id": "35ecbf94-0e46-4a7b-a123-89f31106fcf4",
+			"id": "43c4d45e-41cd-4cee-8af9-da385ea115c3",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "4bbccf3f-0be6-4c26-a44c-bf03c70406fe",
+			"id": "7c317fd1-fd99-410e-97a8-d694e31e9db5",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "c7e7a4e0-eafa-41ab-a776-51348fff30a8",
+			"id": "de456a21-9171-4474-8896-c3a717fbe9a0",
 			"key": "lastresult",
 			"value": "",
 			"type": "string"
