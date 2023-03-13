@@ -13,11 +13,12 @@
 					"script": {
 						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
 						"exec": [
+							"pm.test(\"Status test\", function () {",
 							"let result = pm.response.json(); // get result",
 							"let current_temp = result.main.temp; // get current weather (celsius)",
 							"pm.environment.set(\"temp\", current_temp); // store it in envs",
-							"",
-							"pm.environment.set(\"test\", \"test\"); // store it in envs"
+							"pm.expect(pm.environment.get(\"temp\")).to.equal(\"10\")",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -86,7 +87,7 @@
 	],
 	"variable": [
 		{
-			"id": "e150975f-363d-43bc-a62d-c113a9322281",
+			"id": "a438c18e-87fa-440c-b67c-43732c1891a8",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
