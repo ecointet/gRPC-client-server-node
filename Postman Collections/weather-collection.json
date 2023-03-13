@@ -32,7 +32,7 @@
 							"        displayTemp(\"Bangalore, IND\");",
 							"    else",
 							"        displayTemp(\"London, UK\");",
-							"        ",
+							"",
 							"    postman.setNextRequest(\"Get Current Weather\");",
 							"}",
 							"",
@@ -40,7 +40,6 @@
 							"function displayTemp(newCountry)",
 							"{",
 							" console.log(\"The Temperature is \"+pm.environment.get(\"temp\")+\"F in \"+pm.environment.get(\"location\"));",
-							" ",
 							" pm.environment.set(\"location\", newCountry);",
 							" postman.setNextRequest(\"Get Current Weather\");",
 							"}"
@@ -123,12 +122,12 @@
 	],
 	"variable": [
 		{
-			"id": "09051e44-6efe-4d08-9395-50fc2eba6224",
+			"id": "28f81f57-95ba-477a-8d46-936a7246d724",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "2e2d8ef3-1900-49b0-9057-29a145de0456",
+			"id": "70922dfa-5e58-471d-8905-9cbf831cf6f0",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
