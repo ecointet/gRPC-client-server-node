@@ -13,15 +13,17 @@
 					"script": {
 						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
 						"exec": [
-							"pm.test(\"Temperature from the result\", function () {",
-							"let result = pm.response.json(); // get result",
-							"let current_temp = result.main.temp; // get current weather (celsius)",
-							"pm.environment.set(\"temp\", current_temp); // store it in envs",
+							"pm.test(\"Temperature from the result\", function ()",
+							"{",
+							"    let result = pm.response.json(); // get result",
+							"    let current_temp = result.main.temp; // get current weather (celsius)",
+							"    pm.environment.set(\"temp\", current_temp); // store it in envs",
 							"});",
 							"",
-							"pm.test(\"Temperature value\", function () {",
-							"pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0);",
-							"// minus temp is rare (and check it's an integer)",
+							"pm.test(\"Temperature value\", function ()",
+							"{",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0);",
+							"    // minus temp is rare (and check it's an integer)",
 							"});",
 							"",
 							"if (pm.response.json().name != \"San Francisco\")",
@@ -118,7 +120,7 @@
 	],
 	"variable": [
 		{
-			"id": "3505184a-3ffb-439a-849a-3aae997d206a",
+			"id": "1d79d228-717c-4f08-8826-cb6e579ce14a",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
