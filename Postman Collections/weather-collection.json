@@ -106,7 +106,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "74672c35-c227-44fc-ba92-2209913e3913",
+				"id": "1eb4f57f-fb29-468d-a976-1262533fc486",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -116,7 +116,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1f138eb3-c7bc-4be1-836e-9b5e4a0b46af",
+				"id": "e6104d07-c91f-4dbd-96c7-12938599b53d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -126,18 +126,18 @@
 	],
 	"variable": [
 		{
-			"id": "e75fc187-6a69-4d14-a705-0bbf87ad5a19",
+			"id": "45f52c55-ef2a-4fd9-8ed2-b819fd6c43d4",
 			"key": "APIKEY",
-			"value": "005cb83dfa35aef24e55050efcc69490"
+			"value": "1a47597383a958fd7ab1f18a2a7a80dc"
 		},
 		{
-			"id": "cd40f4ed-f678-4f25-b4ed-511cfad70a17",
+			"id": "b5699dde-fcc3-4eeb-bc18-9e37032c3ec8",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "2f357896-a95d-4b9e-b248-37c894ce9bb9",
+			"id": "05f9cfaf-4dc1-4d4f-9a2f-eb5c1092b4fb",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
