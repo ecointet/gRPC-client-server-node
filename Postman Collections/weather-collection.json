@@ -40,7 +40,7 @@
 					"script": {
 						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
 						"exec": [
-							"if (!pm.environment.get(location))",
+							"if (!pm.environment.has('location'))",
 							"    pm.environment.set(\"location\", \"San Francisco, USA\");"
 						],
 						"type": "text/javascript"
@@ -110,7 +110,7 @@
 	],
 	"variable": [
 		{
-			"id": "ddf503e0-a3e7-45e4-9b3a-2aaed812ac2d",
+			"id": "d1c5c3b4-c561-426f-8266-800970f55dc5",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
