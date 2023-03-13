@@ -38,7 +38,7 @@
 							"function displayTemp(newCountry)",
 							"{",
 							"    let temp = pm.environment.get(\"temp\");",
-							"",
+							"    if (temps is undefined) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    if (newCountry)",
@@ -126,18 +126,18 @@
 	],
 	"variable": [
 		{
-			"id": "65957bfa-3dbb-4509-8920-47f108c9e462",
+			"id": "f2680e0d-36d2-49e2-83ab-a2291644700e",
 			"key": "APIKEY",
 			"value": ""
 		},
 		{
-			"id": "8285f87c-ef80-4a04-b8a8-87a18c8854fc",
+			"id": "562e8adf-fc11-4744-b80e-81b3d33ac65d",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "8f38980d-3902-4441-a13a-6d82411487e0",
+			"id": "2408f61f-df72-4a6d-b5c4-174e2440793b",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
