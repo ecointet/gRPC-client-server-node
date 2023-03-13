@@ -29,7 +29,7 @@
 							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
-							"        displayTemp(newCountry, pm.environment.set(\"location\", \"Bangalore, IND\"));",
+							"        displayTemp(newCountry, \"Bangalore, IND\");",
 							"        ",
 							"        ",
 							"    }",
@@ -130,12 +130,12 @@
 	],
 	"variable": [
 		{
-			"id": "0fc8066c-ca0a-497f-8b6f-fc7e9561fa7a",
+			"id": "0e38615a-b231-41b7-86f8-fa5e372cfb3c",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "91a587ac-449b-4004-aa3e-74458cfea4f3",
+			"id": "01cc6387-e7da-4260-9e2b-b9c60c8d2a83",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
