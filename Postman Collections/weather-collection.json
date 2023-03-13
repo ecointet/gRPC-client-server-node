@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "Get Current Weather",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
+						"exec": [
+							"let result = pm.response.json() // get result",
+							"let current_temp = result.main.temp // get current weather (celsius)",
+							"pm.environment.set(\"temp\", current_temp)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "0d2a5df3-5775-4594-9529-6d94aae03800",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -30,18 +44,15 @@
 					"query": [
 						{
 							"key": "appid",
-							"value": "{{APIKEY}}",
-							"type": "text"
+							"value": "{{APIKEY}}"
 						},
 						{
 							"key": "q",
-							"value": "London, UK",
-							"type": "text"
+							"value": "London, UK"
 						},
 						{
 							"key": "units",
-							"value": "metric",
-							"type": "text"
+							"value": "metric"
 						}
 					]
 				}
@@ -73,7 +84,7 @@
 	],
 	"variable": [
 		{
-			"id": "bfcf97aa-6f85-43b7-8df8-63e748eb95d9",
+			"id": "49184c15-6c2f-4d79-a0eb-6cc4cfd6ce60",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
