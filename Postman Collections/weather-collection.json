@@ -15,7 +15,9 @@
 						"exec": [
 							"let result = pm.response.json(); // get result",
 							"let current_temp = result.main.temp; // get current weather (celsius)",
-							"pm.environment.set(\"temp\", current_temp); // store it in envs"
+							"pm.environment.set(\"temp\", current_temp); // store it in envs",
+							"",
+							"pm.environment.set(\"test\", \"test\"); // store it in envs"
 						],
 						"type": "text/javascript"
 					}
@@ -84,7 +86,7 @@
 	],
 	"variable": [
 		{
-			"id": "46e2410e-82f6-450f-967b-5aca2582ca1d",
+			"id": "e150975f-363d-43bc-a62d-c113a9322281",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
