@@ -98,7 +98,8 @@
 							"value": "imperial"
 						}
 					]
-				}
+				},
+				"description": "Simple way to get the exact temperature from a city.\n\nThe default city can be configured in the variables, or overwritted."
 			},
 			"response": [
 				{
@@ -169,18 +170,18 @@
 	],
 	"variable": [
 		{
-			"id": "9a3a5188-bd94-4fdb-837d-fe937e11c1f0",
+			"id": "76697207-f4cc-46e1-8b67-7989f5e75caa",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "ee8f7d02-4c45-48fd-b290-5633a30957fd",
+			"id": "6f1b71de-b2d6-4127-b60d-5e967169ad1d",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "69dd03a0-a306-4367-bf55-da209239e005",
+			"id": "9c977302-fffa-40a5-9d36-980fb4f2d506",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
