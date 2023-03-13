@@ -30,7 +30,7 @@
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
 							"    {",
-							"        displayTemp(false);",
+							"        displayTemp(newCountry);",
 							"        pm.environment.set(\"location\", \"Bangalore, IND\");",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
@@ -126,12 +126,12 @@
 	],
 	"variable": [
 		{
-			"id": "014ac903-28fa-4160-b5b7-2d976acc373a",
+			"id": "71d58486-cbad-46b3-aefa-fd22c61898b0",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "84861a71-7f9c-4ead-afeb-244338eea86c",
+			"id": "fa5f094f-1794-4603-aeca-48a21b529750",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
