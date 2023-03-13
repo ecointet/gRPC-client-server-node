@@ -34,6 +34,16 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
+						"exec": [
+							"console.log(\"City: San Francisco\");"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "0d2a5df3-5775-4594-9529-6d94aae03800",
@@ -99,7 +109,7 @@
 	],
 	"variable": [
 		{
-			"id": "7c2b84e9-8d75-4efd-8b81-cf04a8fb481b",
+			"id": "3af1a0c8-15df-4561-a419-e1482d05002c",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
