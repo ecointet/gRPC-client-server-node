@@ -14,10 +14,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": []
-				},
 				"url": "https://api.openweathermap.org/data/2.5/weather"
 			},
 			"response": []
@@ -47,7 +43,7 @@
 	],
 	"variable": [
 		{
-			"id": "600b755e-f1ff-41eb-8aa3-b6220b59d437",
+			"id": "e55ab23d-edb7-44f8-a975-cd0fdccba66c",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
