@@ -25,9 +25,12 @@
 							"});",
 							"",
 							"if(pm.environment.get(\"temp\") > 50){",
-							"    postman.setNextRequest(\"Get Current Weather\");",
+							"    console.log(\"Temperature higher than 50\");",
+							"    postman.setNextRequest(\"Get Current Weather2\");",
 							"} else {",
+							"    console.log(\"Temperature lower than 50\");",
 							"    postman.setNextRequest(\"Get Current Weather\");",
+							"    ",
 							"}"
 						],
 						"type": "text/javascript"
@@ -97,7 +100,7 @@
 	],
 	"variable": [
 		{
-			"id": "94b363db-11e9-44d7-bde3-22ce5afc6ad5",
+			"id": "f7ea69f3-cb96-41be-b7dc-1c15a9fe0763",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
