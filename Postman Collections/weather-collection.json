@@ -103,7 +103,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ed59f3e8-5c77-41e7-a65a-2895ae0ea212",
+				"id": "591db85c-da3a-4796-bde1-91ecfd1cd4d0",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -113,7 +113,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "79f07718-328d-4f25-865f-ceeab4ccb920",
+				"id": "d131744f-aec1-4a4a-a561-c678e84e3af2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -123,14 +123,20 @@
 	],
 	"variable": [
 		{
-			"id": "025215e9-5aeb-4a4a-8955-c56557f31313",
+			"id": "35ecbf94-0e46-4a7b-a123-89f31106fcf4",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "334618c5-bae9-47c7-8071-0977904837a6",
+			"id": "4bbccf3f-0be6-4c26-a44c-bf03c70406fe",
 			"key": "city",
 			"value": "San Francisco, USA",
+			"type": "string"
+		},
+		{
+			"id": "c7e7a4e0-eafa-41ab-a776-51348fff30a8",
+			"key": "lastresult",
+			"value": "",
 			"type": "string"
 		}
 	]
