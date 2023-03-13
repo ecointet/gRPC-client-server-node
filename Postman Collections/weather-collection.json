@@ -23,6 +23,7 @@
 							"pm.test(\"Temperature value\", function ()",
 							"{",
 							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
 							"});",
 							"",
 							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
@@ -125,18 +126,18 @@
 	],
 	"variable": [
 		{
-			"id": "ac8755ad-e145-4840-aacf-feb1ce0a6abf",
+			"id": "5d0b1771-0b14-4e28-8795-abfbdf16d8c8",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "545d5119-b0c9-4480-880d-8df0de1d862c",
+			"id": "14756003-5da4-44e5-8626-9c2e592b76fd",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "f6fbb4af-57aa-4c78-ba8e-8829e903cc78",
+			"id": "3f43b9bf-bfb4-4b28-b429-335a3d188485",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
