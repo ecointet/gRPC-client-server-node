@@ -126,18 +126,18 @@
 	],
 	"variable": [
 		{
-			"id": "82bb2c2e-9f3b-4cb1-bb38-aebfff214458",
+			"id": "a5c9fafb-3cd2-4983-a07a-d77df8ddd1a7",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		},
 		{
-			"id": "9259413a-e29d-4bb2-95f0-a0b861b071b8",
+			"id": "8e048848-5c34-4495-a242-447c3cf560e1",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "5a816ec9-2a6f-4965-bd34-5297f2c8d1b8",
+			"id": "6ce9846e-1414-4bbc-ac21-654796483389",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
