@@ -26,15 +26,16 @@
 							"",
 							"if (pm.response.json().name != \"San Francisco\")",
 							"{",
-							"    if (pm.environment.get(\"temp\") > 50){",
+							"    if (pm.environment.get(\"temp\") > 50)",
+							"    {",
 							"        console.log(\"Temperature is over 60F\");",
 							"        pm.environment.set(\"location\", \"Bangalore, IND\");",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
-							"    else {",
-							"        console.log(\"Temperature is below 60F\")",
+							"    else",
+							"    {",
+							"        console.log(\"Temperature is below 60F\");",
 							"        pm.environment.set(\"location\", \"London, UK\");",
-							"        ;",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
 							"}"
@@ -117,7 +118,7 @@
 	],
 	"variable": [
 		{
-			"id": "1f1a2155-d999-4578-98b7-685e446c757b",
+			"id": "3505184a-3ffb-439a-849a-3aae997d206a",
 			"key": "APIKEY",
 			"value": "005cb83dfa35aef24e55050efcc69490"
 		}
