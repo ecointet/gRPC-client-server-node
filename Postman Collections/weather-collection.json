@@ -44,18 +44,7 @@
 							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    // Set visualizer",
-							"pm.visualizer.set(template, {",
-							"    // Pass the response body parsed as JSON as `data`",
-							"    response: pm.response.json()",
-							"});",
-							"    if (newCountry)",
-							"    {",
-							"        pm.environment.set(\"location\", newCountry);",
-							"        postman.setNextRequest(\"Get Current Weather\");",
-							"    }",
-							"}",
-							"",
-							"var template = `",
+							"    var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
 							"        <tr>",
 							"            <th>Name</th>",
@@ -70,6 +59,19 @@
 							"        {{/each}}",
 							"    </table>",
 							"`;",
+							"",
+							"pm.visualizer.set(template, {",
+							"    // Pass the response body parsed as JSON as `data`",
+							"    response: pm.response.json()",
+							"});",
+							"    if (newCountry)",
+							"    {",
+							"        pm.environment.set(\"location\", newCountry);",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    }",
+							"}",
+							"",
+							"",
 							"",
 							""
 						],
@@ -233,36 +235,36 @@
 	],
 	"variable": [
 		{
-			"id": "1af0c0ec-99d7-4d9d-a072-14f77951047e",
+			"id": "100e20bc-995e-4e85-b356-2701dc4aedd2",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "b885aaf2-7559-4d84-bab1-0fcdd64462e7",
+			"id": "76667084-e9ae-4ce9-93b2-7a28c8dff335",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "c3db71f9-9642-4b41-a27d-9d0145f1fb6f",
+			"id": "b8fd1527-19b9-4675-98e1-d4b381a64ed8",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "38933265-bafa-4b53-9ebd-9a4ac7558817",
+			"id": "0813a99b-d9f8-4c04-81c5-2ff9a9edbd16",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "012689ab-d8b8-433e-a6a2-67c3f2a597d4",
+			"id": "0baf2701-6474-4719-84aa-5fcd38698b8f",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "89a308ef-0d93-477c-8571-5ba516a05699",
+			"id": "5cc1d4d7-b750-4fb6-89bf-248ee404f372",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
