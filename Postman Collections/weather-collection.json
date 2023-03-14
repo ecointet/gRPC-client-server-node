@@ -43,6 +43,11 @@
 							"    pm.collectionVariables.set(\"temperature\", temp);",
 							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
+							"    // Set visualizer",
+							"pm.visualizer.set(template, {",
+							"    // Pass the response body parsed as JSON as `data`",
+							"    response: pm.response.json()",
+							"});",
 							"    if (newCountry)",
 							"    {",
 							"        pm.environment.set(\"location\", newCountry);",
@@ -66,11 +71,7 @@
 							"    </table>",
 							"`;",
 							"",
-							"// Set visualizer",
-							"pm.visualizer.set(template, {",
-							"    // Pass the response body parsed as JSON as `data`",
-							"    response: pm.response.json()",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -232,36 +233,36 @@
 	],
 	"variable": [
 		{
-			"id": "c38a5cc0-8d45-430b-acd4-0588fc3067c8",
+			"id": "1af0c0ec-99d7-4d9d-a072-14f77951047e",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "68b4daf6-310a-48ae-bdb2-205f63a93698",
+			"id": "b885aaf2-7559-4d84-bab1-0fcdd64462e7",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "5c9ec576-bb02-470d-88af-715a33a871e0",
+			"id": "c3db71f9-9642-4b41-a27d-9d0145f1fb6f",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "1bc545f3-4a48-4371-90a6-6e61b2d23f22",
+			"id": "38933265-bafa-4b53-9ebd-9a4ac7558817",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "9f89263a-6c10-4bab-b1bf-f0d36ac61383",
+			"id": "012689ab-d8b8-433e-a6a2-67c3f2a597d4",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "4772f059-823f-4cee-991e-f48eeca85110",
+			"id": "89a308ef-0d93-477c-8571-5ba516a05699",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
