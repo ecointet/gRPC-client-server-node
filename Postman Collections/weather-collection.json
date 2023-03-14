@@ -29,7 +29,7 @@
 							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // higher temp is rare",
 							"});",
 							"",
-							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\")) //Use Case",
+							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\")) //Specific Use Case",
 							"{",
 							"    if (pm.environment.get(\"temp\") > pm.collectionVariables.get(\"fahrenheit\"))",
 							"        return displayTemp(pm.collectionVariables.get(\"city1\"));",
@@ -240,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "48cea05c-56e4-41f9-9667-240223e0ec5e",
+			"id": "e3ce23e5-5aef-4b7f-b7d8-fa9db5f77254",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "0dfbaadb-4e43-426d-98f1-c3d74058d3de",
+			"id": "3eef12a4-ebca-45da-8376-3ff5653d6d16",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "7199a397-b0f8-4883-869c-5bc99b6cbd9b",
+			"id": "c190a974-127e-4d84-8221-1b9b92571dcc",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "0978b973-ac51-4e29-beca-e726c7bf41f6",
+			"id": "121c94ca-be39-4ff5-b976-e00e7bd0852a",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "46dbd268-3978-49c1-8ddd-f4e286edf4e7",
+			"id": "5a191ea2-2815-4f85-a6e6-d8ed1afec584",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "587fe839-cdaa-405a-874d-380c42fab3d0",
+			"id": "3199a2f4-8e10-49e3-987b-b953c00337ba",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
