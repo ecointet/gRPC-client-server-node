@@ -110,7 +110,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=Paris, FR&units=imperial",
+							"raw": "https://api.openweathermap.org/data/2.5/weather?appid=cba91d842d23631b5efcdeefd17f7678&q=Paris, FR&units=imperial",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -125,7 +125,7 @@
 							"query": [
 								{
 									"key": "appid",
-									"value": "{{APIKEY}}"
+									"value": "cba91d842d23631b5efcdeefd17f7678"
 								},
 								{
 									"key": "q",
@@ -138,11 +138,50 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": null,
-					"header": null,
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Mar 2023 13:09:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "465"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?q=paris,%20fr&units=imperial"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
 					"cookie": [],
 					"responseTime": null,
-					"body": null
+					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 800,\n            \"main\": \"Clear\",\n            \"description\": \"clear sky\",\n            \"icon\": \"01d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 52.07,\n        \"feels_like\": 49.46,\n        \"temp_min\": 50.38,\n        \"temp_max\": 54.37,\n        \"pressure\": 1007,\n        \"humidity\": 53\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 19.57,\n        \"deg\": 270\n    },\n    \"clouds\": {\n        \"all\": 0\n    },\n    \"dt\": 1678798694,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2041230,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
 				}
 			]
 		}
@@ -171,36 +210,36 @@
 	],
 	"variable": [
 		{
-			"id": "a47325ab-6fc1-4d20-a11e-9618a40c3074",
+			"id": "c2e810a2-ee18-4eaf-98f8-443d1ba89ab3",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "ab800bb4-c565-475e-921c-b235936f1c38",
+			"id": "bfa1881f-a0c6-4a81-964a-c9b26d53e652",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "a72e9a25-51ac-4e3b-b11c-1e4322f80262",
+			"id": "fc6cb5ac-529b-4576-870a-4f03d3bf21d9",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "18f3c2c3-8b57-48f7-859d-76cb7e0fdf85",
+			"id": "338f2179-f635-404e-bf5b-94d53c52df09",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "253839dd-7688-499c-9490-d4f5c83a0ed1",
+			"id": "79e42406-1af4-4bd8-b488-a24c39881472",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "7e540398-168e-4254-8d3b-66fb71cdac83",
+			"id": "ac834d7e-7741-4824-bfbe-b4a5720d6242",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
