@@ -48,7 +48,7 @@
 							"    // Set visualizer",
 							"    ",
 							"",
-							"pm.visualizer.set(BuildTemplate(), {",
+							"pm.visualizer.set(template, {",
 							"    // Pass the response body parsed as JSON as `data`",
 							"    city: pm.collectionVariables.get(\"city\"),",
 							"    temperature: pm.collectionVariables.get(\"temperature\"),",
@@ -63,7 +63,7 @@
 							"",
 							"function BuildTemplate()",
 							"{",
-							"    var template = `",
+							"    var data = `",
 							"    <table bgcolor=\"#FFFFFF\">",
 							"        <tr>",
 							"            <th>City</th>",
@@ -76,8 +76,6 @@
 							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"50px\"/></td>",
 							"            </tr>",
 							"    </table>`;",
-							"",
-							"    return template;",
 							"}",
 							"",
 							""
@@ -242,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "31c16964-9e53-4c6d-a4b5-a9e62bffbe70",
+			"id": "6410d3dc-3ba5-4150-889f-54d36abed3c8",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "e825e1b9-2b41-4d00-8fb2-6ef845908114",
+			"id": "7ee467ae-0c1c-4683-a9d3-300e4f1c1fa5",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "779b39dc-1b60-4af1-a774-cea05b5d97ac",
+			"id": "70134265-ddbf-437f-9f8c-28c12cd5b1e4",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "32bb5ac6-ed65-473e-995d-b275da8d9221",
+			"id": "28ec4810-5681-4764-81e8-3f8f7956c93a",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "90e7fbaa-46c6-4108-8a1e-5a3e4394a60b",
+			"id": "9e68d3f8-bb68-4eee-a3cc-f7a7b6bbc23a",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "2157fe40-88dc-4d0b-b240-f6f78afae838",
+			"id": "dc371697-948f-4633-9817-8db2a90b37fa",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
