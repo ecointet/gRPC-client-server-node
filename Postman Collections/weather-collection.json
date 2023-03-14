@@ -27,7 +27,7 @@
 							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // high temp is rare",
 							"});",
 							"",
-							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
+							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > 50)",
 							"        return displayTemp(\"Bangalore, IND\");",
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "28e71f30-3a31-4ecd-bb00-ec825136d258",
+			"id": "6eae5e28-9b86-43cd-8843-c00f5909d1b6",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "27db4f63-4b6a-4cef-a719-da1fdee45219",
+			"id": "26648083-90ce-475d-96a6-0913613d92b3",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "685d7ed3-c951-4382-9175-ee2c53fdd684",
+			"id": "8eabcf9b-644d-4569-b405-0d318c328344",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
