@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "d2dea29d-0a03-4d42-9dae-019673e3f025",
+			"id": "faac89dc-be5d-4c9e-8a9e-0c9de91ca1e3",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "01f0a857-baf7-40b8-b678-aab888168006",
+			"id": "0e83c86e-980f-42c6-9866-9e2cc19965fd",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "9edb0e24-7b06-4d96-b8ad-b9d43655c2d4",
+			"id": "2fc334ab-4157-4a36-8a56-a678c8094bb7",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
