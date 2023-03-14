@@ -52,7 +52,7 @@
 							"        temperature: pm.collectionVariables.get(\"temperature\"),",
 							"        icon: pm.environment.get(\"weather_icon\")",
 							"    });",
-							"    ",
+							"",
 							"    if (newCountry)",
 							"    {",
 							"        pm.environment.set(\"location\", newCountry);",
@@ -60,7 +60,7 @@
 							"    }",
 							"}",
 							"",
-							"function BuildTemplate()",
+							"function BuildTemplate() //Design UX",
 							"{",
 							"    var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
@@ -241,36 +241,36 @@
 	],
 	"variable": [
 		{
-			"id": "54cb77c1-ee99-4850-975d-129a7534862f",
+			"id": "53d7d8f2-925a-4ae7-acb2-49aa9ce0caf6",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "2d56c39f-01d4-4bd2-8bfd-6472da582cd9",
+			"id": "218292f6-7d71-45f7-a35a-41ebec4e8ea2",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "8d7b2e72-1bdd-4248-9456-dfd839ce7b5f",
+			"id": "21094eb7-3560-4855-a4ae-0f13f05d3d4b",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "3b26ab6e-b7cb-476a-9c78-e088925d2d2c",
+			"id": "e88915a9-9f8a-4899-80a6-b576def8d67c",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "529e24b6-b40a-41c7-b5af-5f59fcaf964f",
+			"id": "02071f78-b2d2-4d88-ac92-8ee95df5f8fd",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "9d3c4995-0e1c-45d6-b2b7-01886fcfc650",
+			"id": "1c6b4d8d-ef08-4104-990e-deefcf315cd7",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
