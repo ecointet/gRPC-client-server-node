@@ -58,8 +58,8 @@
 					"script": {
 						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
 						"exec": [
-							"if (!pm.environment.has('location'))",
-							"    pm.environment.set(\"location\", pm.variables.get(\"city\"));"
+							"//if (!pm.environment.has('location'))",
+							"//    pm.environment.set(\"location\", pm.variables.get(\"city\"));"
 						],
 						"type": "text/javascript"
 					}
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "a52d66f0-7f5f-4f55-9916-bbd890b2f02a",
+			"id": "e808bd49-dbd4-4291-bad4-3164c38c04ab",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "93c5d43a-c68d-4124-8a05-40a2218af23a",
+			"id": "d665819c-a983-4fbb-bc20-99fcfc86dd63",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "407825a5-0fe1-4799-a9ab-c64a7527705f",
+			"id": "41f7bb76-8b77-4b2a-baa2-21c87debf625",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
