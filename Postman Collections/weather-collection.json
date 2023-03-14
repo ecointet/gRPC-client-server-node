@@ -29,7 +29,7 @@
 							"",
 							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\"))",
 							"{",
-							"    if (pm.environment.get(\"temp\") > 50)",
+							"    if (pm.environment.get(\"temp\") > pm.collectionVariables.get(\"fahrenheit\"))",
 							"        return displayTemp(\"Bangalore, IND\");",
 							"    return displayTemp(\"London, UK\");",
 							"}",
@@ -171,36 +171,36 @@
 	],
 	"variable": [
 		{
-			"id": "a9883c30-c7b2-4fd9-9726-a763023b0f21",
+			"id": "74e2fcba-2750-4083-857a-b4ed2e1dbd99",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "edffc980-6c2c-4517-8b27-37020b55cacd",
+			"id": "b0fd91dc-606f-454a-aef4-a8515c6bedf0",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "9658cd8a-b616-4369-a36d-580ca4c9735e",
+			"id": "4e38ed5f-30af-4fb4-9853-9b780140954f",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "3c0a0e0d-1e48-43e8-84a1-71ca0af87584",
+			"id": "c26f553f-606e-415f-b5c2-24688cb58ae8",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "a5bfe238-de6c-4332-9753-4e5d6294edf1",
+			"id": "d530f3ce-ff00-45e0-b229-3e3566ace2e3",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "f9135028-4351-46d9-bc40-d11ff44c298b",
+			"id": "fc540116-b246-422a-be13-4668e3dae41d",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
