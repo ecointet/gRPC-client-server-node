@@ -41,7 +41,6 @@
 							"    let temp = pm.environment.get(\"temp\");",
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
-							"    pm.collectionVariables.set(\"city\", newCountry);",
 							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    if (newCountry)",
@@ -172,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "00a448e2-14fa-4adc-9766-63e50b311032",
+			"id": "2d12950d-0967-4a7a-a0cb-79e68be88789",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "b6ec74ef-42b5-4e22-a75f-c916914643a6",
+			"id": "08cb9ce9-60a5-40c0-aa19-7ef4b69b6839",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "6b839a47-a395-4a96-ab63-48ea8418c295",
+			"id": "480fea21-ac0c-4df3-b168-c93087133d34",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
