@@ -53,7 +53,7 @@
 							"",
 							"            <tr>",
 							"                <td>{{city}}</td>",
-							"                <td>{{email}}</td>",
+							"                <td>{{temperature}}</td>",
 							"            </tr>",
 							"",
 							"    </table>",
@@ -61,7 +61,7 @@
 							"",
 							"pm.visualizer.set(template, {",
 							"    // Pass the response body parsed as JSON as `data`",
-							"    city: pm.collectionVariables.get(\"city\")",
+							"    city: pm.collectionVariables.get(\"city\"),",
 							"    temperature: pm.collectionVariables.get(\"temperature\")",
 							"});",
 							"    if (newCountry)",
@@ -235,36 +235,36 @@
 	],
 	"variable": [
 		{
-			"id": "65f79f88-7ab6-4723-9af0-9c2c892bc0a2",
+			"id": "cf1c5455-a63c-41d3-9f95-2de50c054de8",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "18c4a5e3-d9e4-4749-bf43-18ffd8dcab86",
+			"id": "775df888-25f1-40e7-a454-362ca9aa0f6c",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "e41b8286-be0b-4749-bcf1-ab524f80bae3",
+			"id": "9d93603f-8d01-41ea-ab79-7e2e3defb9da",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "37ceb524-f387-48fe-8a25-96c6b8f53d8e",
+			"id": "6520c074-1813-434f-8bcb-8fbc6d2d7559",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "73893fd4-6f46-4e38-89ea-bc6d2941f57a",
+			"id": "05941c14-b8ef-484c-b2e6-94daa6f08c17",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "62fa8458-4c4e-486b-a88c-6a408edb233b",
+			"id": "ca859a4e-7020-45f2-a283-377340880d2f",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
