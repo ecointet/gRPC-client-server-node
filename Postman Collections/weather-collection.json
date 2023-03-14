@@ -48,7 +48,7 @@
 							"    // Set visualizer",
 							"    ",
 							"",
-							"pm.visualizer.set(template, {",
+							"pm.visualizer.set(BuildTemplate(), {",
 							"    // Pass the response body parsed as JSON as `data`",
 							"    city: pm.collectionVariables.get(\"city\"),",
 							"    temperature: pm.collectionVariables.get(\"temperature\"),",
@@ -242,36 +242,36 @@
 	],
 	"variable": [
 		{
-			"id": "1a000b1f-74eb-4911-95c0-81e18330c116",
+			"id": "31c16964-9e53-4c6d-a4b5-a9e62bffbe70",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "d2b17083-5fef-46cd-9632-fbc85a198581",
+			"id": "e825e1b9-2b41-4d00-8fb2-6ef845908114",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "4d056b69-bf20-44ef-9c78-dfb1dd28680e",
+			"id": "779b39dc-1b60-4af1-a774-cea05b5d97ac",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "973d6364-6cd9-428b-9c07-7bfd51eb0d05",
+			"id": "32bb5ac6-ed65-473e-995d-b275da8d9221",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "1f327414-e03b-49d0-a964-a24b4d32eb88",
+			"id": "90e7fbaa-46c6-4108-8a1e-5a3e4394a60b",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "d648033a-4a54-410d-b3b9-b133f010b316",
+			"id": "2157fe40-88dc-4d0b-b240-f6f78afae838",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
