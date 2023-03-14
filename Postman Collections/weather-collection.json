@@ -151,7 +151,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9a0e870c-37c8-45a4-a71e-028ebf7d6be2",
+				"id": "0fdb46c3-ee12-44a0-b9e8-2d77e2e14e59",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -161,7 +161,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8531911f-64ae-4c6d-8979-03db5c188399",
+				"id": "81d0c6a7-3322-49a1-b131-cbd5b9fc600f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "ecd646cb-57f7-45db-b768-b57d4d1e516f",
+			"id": "1d747a78-cf99-40d1-a733-95e82359b3ce",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "bcdb7a25-24e4-4a2a-af5f-c7bf31306d46",
+			"id": "fbd69c0a-71b8-41a8-ab56-a4bde56f02b5",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "395cded4-0662-41c3-99b5-dadc7c37b137",
+			"id": "814b0e81-0e96-4c50-bd27-f34717c243e3",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
