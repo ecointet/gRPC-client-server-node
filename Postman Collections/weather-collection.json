@@ -42,10 +42,10 @@
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
 							"",
-							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
+							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"city\"));",
 							"    if (newCountry)",
 							"    {",
-							"        pm.environment.set(\"location\", newCountry);",
+							"        pm.environment.set(\"city\", newCountry);",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
 							"}"
@@ -73,7 +73,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{city}}&units=imperial",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -92,7 +92,7 @@
 						},
 						{
 							"key": "q",
-							"value": "{{location}}"
+							"value": "{{city}}"
 						},
 						{
 							"key": "units",
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "f19fd5f3-afdc-4599-817a-79a80a324234",
+			"id": "a52d66f0-7f5f-4f55-9916-bbd890b2f02a",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "1d13e2fd-f0cb-49d9-8159-3b6094577942",
+			"id": "93c5d43a-c68d-4124-8a05-40a2218af23a",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "b49282db-88b1-4b57-a0b4-fff45390ee56",
+			"id": "407825a5-0fe1-4799-a9ab-c64a7527705f",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
