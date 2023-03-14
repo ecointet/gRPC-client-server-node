@@ -178,7 +178,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 14 Mar 2023 13:09:19 GMT"
+							"value": "Tue, 14 Mar 2023 13:54:16 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -186,7 +186,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "465"
+							"value": "516"
 						},
 						{
 							"key": "Connection",
@@ -211,7 +211,7 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 800,\n            \"main\": \"Clear\",\n            \"description\": \"clear sky\",\n            \"icon\": \"01d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 52.07,\n        \"feels_like\": 49.46,\n        \"temp_min\": 50.38,\n        \"temp_max\": 54.37,\n        \"pressure\": 1007,\n        \"humidity\": 53\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 19.57,\n        \"deg\": 270\n    },\n    \"clouds\": {\n        \"all\": 0\n    },\n    \"dt\": 1678798694,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2041230,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
+					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 520,\n            \"main\": \"Rain\",\n            \"description\": \"light intensity shower rain\",\n            \"icon\": \"09d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 50.23,\n        \"feels_like\": 47.97,\n        \"temp_min\": 45.37,\n        \"temp_max\": 52.25,\n        \"pressure\": 1008,\n        \"humidity\": 64\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 21.85,\n        \"deg\": 260,\n        \"gust\": 34.52\n    },\n    \"rain\": {\n        \"1h\": 0.49\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1678801739,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2012208,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
 				}
 			]
 		}
@@ -240,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "29a0db08-a82f-4295-abc4-ec9feea3cbdc",
+			"id": "8fa0110f-fcda-49cf-8638-deed0609e1d1",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "3495d1ed-1d7d-49e8-96e4-e02625cc6887",
+			"id": "03e95aea-69e2-409e-a9f5-c9b09a66ddac",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "66ec9a71-31e5-4e29-8fd7-8380485bca48",
+			"id": "e7dfca8f-4a47-425a-aeb6-fa1af55354c0",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "0918daf2-6fab-49a5-8d63-1bc7b8359a74",
+			"id": "64b8bbee-101e-4158-ba8f-e9008398240f",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "208c1522-457f-479e-a236-2d89bf5f42e6",
+			"id": "03ec52ea-1ab6-450c-b2fe-3dbc8e47522d",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "73365a6b-08ab-41c8-b545-53f9e8231185",
+			"id": "505aa6d4-6d36-41f6-90eb-6f720109ee9d",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
