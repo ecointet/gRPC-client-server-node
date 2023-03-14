@@ -100,7 +100,7 @@
 						}
 					]
 				},
-				"description": "Simple way to get the exact temperature from a city.\n\nThe default city can be configured in the Collection Variables, or overwritted."
+				"description": "Simple way to get the exact temperature from a city (ex: Paris, FR)\n\nThe default city can be configured in the Collection Variables, or overwritted."
 			},
 			"response": [
 				{
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "d240ddeb-16ab-4d8a-93e4-cab92f5ff877",
+			"id": "067c5db2-4692-44ed-add9-6ee874b67a21",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "917fd919-8f65-4e96-9fc4-ca1333688b68",
+			"id": "5b8c104b-c902-4f89-8893-902a23e95fc7",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "8469a504-5887-4c95-86b9-86baea84f7a5",
+			"id": "6d54e879-ad2a-455a-9c97-5be6c4bd2bbe",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
