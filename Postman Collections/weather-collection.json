@@ -34,6 +34,12 @@
 							"    return displayTemp(pm.collectionVariables.get(\"city2\"));",
 							"}",
 							"",
+							"// Set visualizer",
+							"pm.visualizer.set(template, {",
+							"    // Pass the response body parsed as JSON as `data`",
+							"    response: pm.response.json()",
+							"});",
+							"",
 							"displayTemp(null);",
 							"",
 							"function displayTemp(newCountry)",
@@ -49,12 +55,6 @@
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
 							"}",
-							"",
-							"// Set visualizer",
-							"pm.visualizer.set(template, {",
-							"    // Pass the response body parsed as JSON as `data`",
-							"    response: pm.response.json()",
-							"});",
 							"",
 							"var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
@@ -232,36 +232,36 @@
 	],
 	"variable": [
 		{
-			"id": "a575b0e6-0536-4f35-9603-9928c6f0aa3f",
+			"id": "911243b6-a5b8-4a7d-a870-b59c16e79146",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "693d05fe-61a5-49e0-8129-d7c2ed0b89d2",
+			"id": "20ff5b1f-2c8b-450c-b876-9a3e7aca2285",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "305cf059-ce61-449c-ba07-932cbbc26c54",
+			"id": "7a2d0926-c248-412a-acde-aad2fa4cd518",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "6413c43d-4700-4cfb-a190-ba684061ff85",
+			"id": "7b5b23d1-e147-4688-84c9-ebefaa7c14ca",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "6f6a7123-583a-4f3f-af12-747783806cdb",
+			"id": "83b606ae-0253-449a-9374-dd13941ace5a",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "05db8f6b-b72e-4600-bba0-aafa86c6b5fe",
+			"id": "75535ecf-191d-4854-8014-abbba7482554",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
