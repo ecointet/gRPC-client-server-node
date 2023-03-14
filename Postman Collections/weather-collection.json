@@ -46,7 +46,6 @@
 							"    if (newCountry)",
 							"    {",
 							"        pm.environment.set(\"location\", newCountry);",
-							"        pm.variables.set(\"city\", newCountry);",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
 							"}"
@@ -172,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "2ba31f14-3d05-416f-b0dc-a88bcdc104c2",
+			"id": "1a3f5630-3f76-4437-bb57-166a9ddacad2",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "0ce4b03b-cfef-4035-854e-d46e06d96956",
+			"id": "72fdaed7-96a5-400f-934d-8461bc9ae8f0",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "e7f29ca7-ba94-4c5a-93ea-14703ae7c926",
+			"id": "aa89dd28-fab0-4bbe-bac5-b080697f9eda",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
