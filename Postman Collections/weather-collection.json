@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "c0358480-52f2-44e0-be10-745ee2c6fe24",
 		"name": "Weather API by ecointet",
-		"description": "A Full API Collection to get a city temperature (depending of another city).\n\n**Instant Weather** from any country in the World (ex: Paris, FR)\n\n<img src=\"https://content.pstmn.io/55ea49a5-9a87-40ff-aeec-d75b06f4fe43/aW1hZ2UucG5n\" alt=\"\" height=\"159\" width=\"148\">",
+		"description": "A Full API Collection to get a city temperature.\n\n**Instant Weather** from any country in the World (ex: Paris, FR)\n\n<img src=\"https://content.pstmn.io/55ea49a5-9a87-40ff-aeec-d75b06f4fe43/aW1hZ2UucG5n\" width=\"148\" height=\"159\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -171,36 +171,36 @@
 	],
 	"variable": [
 		{
-			"id": "f39b9244-8ac5-4795-949b-7c56dd47508c",
+			"id": "f43de583-f99f-4700-b071-e76489c87441",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "a718699f-23a9-4a46-9bf9-ce91656dd5d4",
+			"id": "445232bd-e45b-413b-af45-ccb02f82c8ca",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "bdfd75b1-b6a5-4eed-b9b4-ebcb6f66fdfe",
+			"id": "b768df05-a8a1-4e3f-8ed0-e3af685785fb",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "f2ab8708-517f-4272-bf76-7a662e785a47",
+			"id": "d04723f3-57de-4cae-bb43-25de64d0e263",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "95dee956-a393-49a8-97d6-1ae179d2e6a7",
+			"id": "52053879-d69a-4676-8294-df08d625d126",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "d1b211f6-05ae-452b-985f-63647657d516",
+			"id": "c5cdeafe-e214-44eb-b424-afdc720a28fc",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
