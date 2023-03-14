@@ -145,6 +145,103 @@
 					"body": null
 				}
 			]
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=Paris, FR&units=imperial",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
+						"exec": [
+							"pm.test(\"Temperature from the result\", function ()",
+							"{",
+							"    let result = pm.response.json(); // get result",
+							"    let current_temp = result.main.temp; // get current weather (Far.)",
+							"    pm.environment.set(\"temp\", current_temp); // store it in envs",
+							"});",
+							"",
+							"pm.test(\"Temperature value\", function ()",
+							"{",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // high temp is rare",
+							"});",
+							"",
+							"if (pm.environment.get(\"location\") == pm.variables.get(\"city\"))",
+							"{",
+							"    if (pm.environment.get(\"temp\") > 50)",
+							"        return displayTemp(\"Bangalore, IND\");",
+							"    return displayTemp(\"London, UK\");",
+							"}",
+							"",
+							"displayTemp(null);",
+							"",
+							"function displayTemp(newCountry)",
+							"{",
+							"    let temp = pm.environment.get(\"temp\");",
+							"    if (temp == undefined || Number.isInteger(temp)) return;",
+							"    pm.collectionVariables.set(\"temperature\", temp);",
+							"",
+							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
+							"    if (newCountry)",
+							"    {",
+							"        pm.environment.set(\"location\", newCountry);",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
+						"exec": [
+							"if (!pm.environment.has('location'))",
+							"    pm.environment.set(\"location\", pm.variables.get(\"city\"));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "2a85d415-406a-403d-a811-1ddfac5bd108",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=Paris, FR&units=imperial",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "{{APIKEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Paris, FR"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -171,18 +268,18 @@
 	],
 	"variable": [
 		{
-			"id": "6691c8ff-a5ed-419a-8671-222115923337",
+			"id": "d36c0710-6a94-4b19-86d4-dc0a96bfca0a",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "6d8834f1-8573-4b2e-bced-a3f2dd33ee09",
+			"id": "bd03dd43-07db-45b1-95de-3920be0e0066",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "b41e4350-d08c-4bdd-9ad6-adae90c50507",
+			"id": "f12de7df-7684-4d07-9865-b93cce510f55",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
