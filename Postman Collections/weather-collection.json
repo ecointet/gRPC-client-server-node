@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "3d0b86dd-c5a4-44f9-a716-1c7bde6f0277",
+			"id": "bc840e01-434d-4d8d-aeff-bc27b9dc219d",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "5a956a91-2f7c-4016-90f4-cd96394b1dd9",
+			"id": "266a1919-4d87-4e4e-8a21-888f4d91e9e6",
 			"key": "city",
 			"value": "Madrid, Spain",
 			"type": "string"
 		},
 		{
-			"id": "cdcd5cc1-bcbd-4e30-b2c6-d889d94bde93",
+			"id": "66f0676e-4aa5-4df3-9657-6eda6d861dcf",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
