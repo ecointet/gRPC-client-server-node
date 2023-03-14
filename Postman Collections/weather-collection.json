@@ -46,22 +46,7 @@
 							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    // Set visualizer",
-							"    var template = `",
-							"    <table bgcolor=\"#FFFFFF\">",
-							"        <tr>",
-							"            <th>City</th>",
-							"            <th>Temperature</th>",
-							"            <th>Weather</th>",
-							"        </tr>",
-							"",
-							"            <tr>",
-							"                <td>{{city}}</td>",
-							"                <td>{{temperature}} °F</td>",
-							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"50px\"/></td>",
-							"            </tr>",
-							"",
-							"    </table>",
-							"`;",
+							"    ",
 							"",
 							"pm.visualizer.set(template, {",
 							"    // Pass the response body parsed as JSON as `data`",
@@ -78,7 +63,7 @@
 							"",
 							"function BuildTemplate()",
 							"{",
-							"    ",
+							"",
 							"}",
 							"",
 							""
@@ -243,36 +228,36 @@
 	],
 	"variable": [
 		{
-			"id": "da2b7c70-9065-449b-9c43-098683033557",
+			"id": "bd00b545-ef8d-4b93-add2-e24544d44ecb",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "dd0beb10-f2c3-4874-97dc-520f99b9884c",
+			"id": "e9273dff-3d93-49f4-8ea3-6b9b570eee3f",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "1722eda0-095c-4e24-a928-4525b1a01234",
+			"id": "82f03631-73f9-45f7-8e17-7bfe2f1a55aa",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "88027125-5125-4e86-ad94-cc3b05b51dba",
+			"id": "1bfb5675-2a0d-4706-b579-b739fb80123f",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "fb60a1f6-2dc4-4fb7-b24c-7b1603aad2f5",
+			"id": "b66c9091-4c92-4148-9c8a-0e0b1b1e9f8d",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "33e2459d-f114-4966-a61a-718bbe870832",
+			"id": "13d39543-9b0d-40dc-a187-c558f86df819",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
