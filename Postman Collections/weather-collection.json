@@ -139,7 +139,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q=Paris, FR&units=imperial",
+							"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -158,7 +158,7 @@
 								},
 								{
 									"key": "q",
-									"value": "Paris, FR"
+									"value": "{{location}}"
 								},
 								{
 									"key": "units",
@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "9374f91c-bed8-43f5-95ec-cfb76f641696",
+			"id": "cc4d6a73-4c72-448a-8e3e-0bf7d5adb7cf",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "b97019c3-0f51-4c98-91d4-588d4d229324",
+			"id": "561109ea-c3db-46c0-9f3a-b853b8d9db3d",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "f5485ba3-8a14-423f-857f-b855406483ad",
+			"id": "66b4a7ea-3848-4ab9-a96d-9edf5e7a7c65",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "23f8c679-b6cb-4852-a639-67df089acfb6",
+			"id": "ad791f20-a3ce-4a27-83ed-9474cb47e9d7",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "deef951d-802f-4acc-bdc6-2acccbecb23e",
+			"id": "a426e0b9-9cd8-481f-ad54-71ea15536755",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "38fe27e1-6ca7-4888-aeda-3fa797a02ad5",
+			"id": "0f365cc9-580c-4375-8644-a20ee9bcf1b9",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
