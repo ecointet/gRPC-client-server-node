@@ -45,14 +45,14 @@
 							"    pm.collectionVariables.set(\"temperature\", temp);",
 							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
-							"    // Set visualizer",
 							"    ",
-							"",
-							"pm.visualizer.set(BuildTemplate(), {",
-							"    city: pm.collectionVariables.get(\"city\"),",
-							"    temperature: pm.collectionVariables.get(\"temperature\"),",
-							"    icon: pm.environment.get(\"weather_icon\")",
-							"});",
+							"    // Set visualizer",
+							"    pm.visualizer.set(BuildTemplate(), {",
+							"        city: pm.collectionVariables.get(\"city\"),",
+							"        temperature: pm.collectionVariables.get(\"temperature\"),",
+							"        icon: pm.environment.get(\"weather_icon\")",
+							"    });",
+							"    ",
 							"    if (newCountry)",
 							"    {",
 							"        pm.environment.set(\"location\", newCountry);",
@@ -241,36 +241,36 @@
 	],
 	"variable": [
 		{
-			"id": "2bdc0b7d-e473-4d5c-b702-2bacf1bce5d3",
+			"id": "54cb77c1-ee99-4850-975d-129a7534862f",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "8fc18bf5-27a6-4dba-a4b1-6546ff197a51",
+			"id": "2d56c39f-01d4-4bd2-8bfd-6472da582cd9",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "6563e27f-5069-4cb4-b669-4af5935ae356",
+			"id": "8d7b2e72-1bdd-4248-9456-dfd839ce7b5f",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "beb9599c-dd25-426b-8d86-978123949324",
+			"id": "3b26ab6e-b7cb-476a-9c78-e088925d2d2c",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "67683915-39c2-4ee8-9c1f-4614b7f3b714",
+			"id": "529e24b6-b40a-41c7-b5af-5f59fcaf964f",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "d595c177-bbf7-4258-8bb4-1a65b2c1a7e3",
+			"id": "9d3c4995-0e1c-45d6-b2b7-01886fcfc650",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
