@@ -57,7 +57,7 @@
 							"            <tr>",
 							"                <td>{{city}}</td>",
 							"                <td>{{temperature}} °F</td>",
-							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"70px\"/></td>",
+							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"50px\"/></td>",
 							"            </tr>",
 							"",
 							"    </table>",
@@ -240,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "300debd6-ae73-4842-b7b6-b352566e1043",
+			"id": "71e967b3-2e0f-4cda-8e1a-77c489e75bfd",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "06807832-9cf7-4698-b4ae-90273278f645",
+			"id": "d5bf9d96-0770-4de6-b589-d417fe749850",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "a1379fb1-bade-49b5-b9c7-04c79678be2f",
+			"id": "1a338141-fcdc-4767-ac9a-d299c4177c59",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "baf58b67-a936-42f8-a8b3-d9e0b7f8733e",
+			"id": "c3b6b02b-24be-43dd-9284-fb94a83e354b",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "12ad58d8-d5b4-4351-87c6-7eee796a4c45",
+			"id": "9f64de3c-2e1f-4b80-a02d-63dd5b37cd36",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "aff3a0f3-a69b-4280-8a21-d919aba9ab6d",
+			"id": "c0a32c21-f407-45c7-9ff4-cdf8e0eabbbf",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
