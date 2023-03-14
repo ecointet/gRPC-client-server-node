@@ -14,7 +14,7 @@
 					"script": {
 						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
 						"exec": [
-							"pm.test(\"Temperature from the result\", function () //Test Values",
+							"pm.test(\"Temperature from the result\", function ()",
 							"{",
 							"    let result = pm.response.json(); // get result",
 							"    let current_temp = result.main.temp; // get current weather (Far.)",
@@ -23,25 +23,27 @@
 							"    pm.environment.set(\"weather_icon\", result.weather[0].icon); // store icon in envs  ",
 							"});",
 							"",
-							"pm.test(\"Temperature value\", function () //Test Range",
+							"pm.test(\"Temperature value\", function ()",
 							"{",
-							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // lower temp is rare",
-							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // higher temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // high temp is rare",
 							"});",
 							"",
-							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\")) //Specific Use Case",
+							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\"))",
 							"{",
 							"    if (pm.environment.get(\"temp\") > pm.collectionVariables.get(\"fahrenheit\"))",
 							"        return displayTemp(pm.collectionVariables.get(\"city1\"));",
 							"    return displayTemp(pm.collectionVariables.get(\"city2\"));",
 							"}",
+							"",
 							"displayTemp(null);",
 							"",
-							"function displayTemp(newCountry) //Render Results",
+							"function displayTemp(newCountry)",
 							"{",
 							"    let temp = pm.environment.get(\"temp\");",
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
+							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    ",
 							"    // Set visualizer",
@@ -58,7 +60,8 @@
 							"    }",
 							"}",
 							"",
-							"function BuildTemplate() //Design UX",
+							"//Design UX",
+							"function BuildTemplate()",
 							"{",
 							"    var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
@@ -239,36 +242,36 @@
 	],
 	"variable": [
 		{
-			"id": "59d29110-b7d0-4931-9507-e6013a5b0251",
+			"id": "03d32dd7-ee5b-4305-a1c5-c07c086f23d0",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "010fc285-44f1-40e3-be00-7e0d357b28a2",
+			"id": "f757622b-2c81-452d-be37-64e0fffb64bb",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "78680c72-d670-4265-b447-4391dbdaf4df",
+			"id": "4d416e9b-e392-42eb-a8b7-704772682377",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "03a44187-d163-4815-9cbd-228c36558d4f",
+			"id": "ee1c5d3b-2d70-4e5a-9e4b-061a64f91aba",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "255dc5d5-2cfc-41ee-b19b-980d25b7ad51",
+			"id": "d75e7fc8-5a67-4bdd-a3be-eb11813fa298",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "6ce75e7c-bd84-427b-b975-7a029ea83872",
+			"id": "94726c16-778f-46e7-ab5c-fe6457f2316f",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
