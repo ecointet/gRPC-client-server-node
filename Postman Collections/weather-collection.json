@@ -151,7 +151,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a43a36ae-13d7-4a41-b2dc-c6d099dcee27",
+				"id": "d13b8e07-dd27-4b16-8575-7b8984c2473c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -161,7 +161,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "59e2b7f7-b7f7-4deb-b648-cd2ff63429a2",
+				"id": "75952f46-1cd3-4ff1-939e-e07d6d6aec08",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -171,20 +171,38 @@
 	],
 	"variable": [
 		{
-			"id": "29274f4a-a13b-41c6-be4d-3217deebf1f1",
+			"id": "a9883c30-c7b2-4fd9-9726-a763023b0f21",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "579b18da-6778-4a8a-b84f-0afad9e711bd",
+			"id": "edffc980-6c2c-4517-8b27-37020b55cacd",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "9aeb21b7-cc02-4109-84b8-b4a983a2b4c8",
+			"id": "9658cd8a-b616-4369-a36d-580ca4c9735e",
 			"key": "temperature",
 			"value": "0",
+			"type": "string"
+		},
+		{
+			"id": "3c0a0e0d-1e48-43e8-84a1-71ca0af87584",
+			"key": "city1",
+			"value": "Bangalore, IND",
+			"type": "string"
+		},
+		{
+			"id": "a5bfe238-de6c-4332-9753-4e5d6294edf1",
+			"key": "city2",
+			"value": "London, UK",
+			"type": "string"
+		},
+		{
+			"id": "f9135028-4351-46d9-bc40-d11ff44c298b",
+			"key": "fahrenheit",
+			"value": "60",
 			"type": "string"
 		}
 	]
