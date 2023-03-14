@@ -43,7 +43,6 @@
 							"    let temp = pm.environment.get(\"temp\");",
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
-							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    ",
 							"    // Set visualizer",
@@ -241,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "1ba9c42d-e2b4-4c21-b978-ff196d486835",
+			"id": "b940c42b-0009-4303-ac4d-7d921bce3525",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "74fa683a-e57e-46d8-b889-2bc127942633",
+			"id": "2827ae63-a002-4e24-a2cf-497de7fef307",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "a4edf0a2-82a2-447d-bb30-34085a9294fd",
+			"id": "78a4ab65-0e06-46dc-8f65-fdf695b63696",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "0b5b83e1-90e5-44c5-8427-39813d15c487",
+			"id": "3649880a-dd01-47ee-80c1-b827b38badf5",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "995a6201-4511-498d-96a3-0df36e2cf074",
+			"id": "d44465e8-0233-4404-ac8a-236081cc9e03",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "04ff7d68-9672-4b82-a68b-ee3ddd935803",
+			"id": "d9dd6634-a2bb-4e17-bae9-f203e452c7fa",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
