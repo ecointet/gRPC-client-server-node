@@ -42,10 +42,10 @@
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
 							"",
-							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"city\"));",
+							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
 							"    if (newCountry)",
 							"    {",
-							"        pm.environment.set(\"city\", newCountry);",
+							"        pm.environment.set(\"location\", newCountry);",
 							"        postman.setNextRequest(\"Get Current Weather\");",
 							"    }",
 							"}"
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "cd3e8cbb-2f8d-463c-b6a8-bdd5d87d2414",
+			"id": "f16383bd-e86f-4272-9560-aedf3037b2ea",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "ce664a24-8790-4a59-b4c1-387d03a1ee6b",
+			"id": "65375ed1-c594-4829-8188-b1923e726b11",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "9492c7e8-f36d-449d-8807-7365d18adc0d",
+			"id": "af1df5ec-6737-4545-aced-b1ce72d8b37f",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
