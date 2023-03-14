@@ -18,9 +18,10 @@
 							"{",
 							"    let result = pm.response.json(); // get result",
 							"    let current_temp = result.main.temp; // get current weather (Far.)",
-							"",
+							"    console.log(\"icon: \"+result.weather.icon);",
 							"    pm.environment.set(\"temp\", current_temp); // store temp in envs",
-							"    pm.environment.set(\"weather_icon\", result.weather[0].icon); // store icon in envs  ",
+							"    pm.environment.set(\"weather_icon\", result.weather.icon); // store icon in envs",
+							"    ",
 							"});",
 							"",
 							"pm.test(\"Temperature value\", function ()",
@@ -38,29 +39,14 @@
 							"",
 							"displayTemp(null);",
 							"",
-							"function displayTemp(newCountry) //Render Results",
+							"function displayTemp(newCountry)",
 							"{",
 							"    let temp = pm.environment.get(\"temp\");",
 							"    if (temp == undefined || Number.isInteger(temp)) return;",
 							"    pm.collectionVariables.set(\"temperature\", temp);",
+							"",
 							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
-							"    ",
 							"    // Set visualizer",
-							"    pm.visualizer.set(BuildTemplate(), {",
-							"        city: pm.collectionVariables.get(\"city\"),",
-							"        temperature: pm.collectionVariables.get(\"temperature\"),",
-							"        icon: pm.environment.get(\"weather_icon\")",
-							"    });",
-							"",
-							"    if (newCountry)",
-							"    {",
-							"        pm.environment.set(\"location\", newCountry);",
-							"        postman.setNextRequest(\"Get Current Weather\");",
-							"    }",
-							"}",
-							"",
-							"function BuildTemplate() //Design UX",
-							"{",
 							"    var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
 							"        <tr>",
@@ -68,15 +54,30 @@
 							"            <th>Temperature</th>",
 							"            <th>Weather</th>",
 							"        </tr>",
+							"",
 							"            <tr>",
 							"                <td>{{city}}</td>",
 							"                <td>{{temperature}} °F</td>",
-							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"50px\"/></td>",
+							"                <td>https://openweathermap.org/img/wn/{{icon}}.png</td>",
 							"            </tr>",
-							"    </table>`;",
 							"",
-							"    return template;",
+							"    </table>",
+							"`;",
+							"",
+							"pm.visualizer.set(template, {",
+							"    // Pass the response body parsed as JSON as `data`",
+							"    city: pm.collectionVariables.get(\"city\"),",
+							"    temperature: pm.collectionVariables.get(\"temperature\"),",
+							"    icon: pm.environment.get(\"weather_icon\")",
+							"});",
+							"    if (newCountry)",
+							"    {",
+							"        pm.environment.set(\"location\", newCountry);",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    }",
 							"}",
+							"",
+							"",
 							"",
 							""
 						],
@@ -130,7 +131,7 @@
 						}
 					]
 				},
-				"description": "Simple way to get the exact temperature from a city (ex: Paris, FR)\n\nThe default city can be configured in the Collection Variables, or overwritted.\n\n<img src=\"https://content.pstmn.io/6754ea92-9470-46b8-8f39-f2b234ea4642/aW1hZ2UucG5n\" alt=\"Result%20in%20visualizer\" height=\"139\" width=\"320\">"
+				"description": "Simple way to get the exact temperature from a city (ex: Paris, FR)\n\nThe default city can be configured in the Collection Variables, or overwritted."
 			},
 			"response": [
 				{
@@ -178,7 +179,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 14 Mar 2023 13:54:16 GMT"
+							"value": "Tue, 14 Mar 2023 13:09:19 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -186,7 +187,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "516"
+							"value": "465"
 						},
 						{
 							"key": "Connection",
@@ -211,7 +212,7 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 520,\n            \"main\": \"Rain\",\n            \"description\": \"light intensity shower rain\",\n            \"icon\": \"09d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 50.23,\n        \"feels_like\": 47.97,\n        \"temp_min\": 45.37,\n        \"temp_max\": 52.25,\n        \"pressure\": 1008,\n        \"humidity\": 64\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 21.85,\n        \"deg\": 260,\n        \"gust\": 34.52\n    },\n    \"rain\": {\n        \"1h\": 0.49\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1678801739,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2012208,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
+					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 800,\n            \"main\": \"Clear\",\n            \"description\": \"clear sky\",\n            \"icon\": \"01d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 52.07,\n        \"feels_like\": 49.46,\n        \"temp_min\": 50.38,\n        \"temp_max\": 54.37,\n        \"pressure\": 1007,\n        \"humidity\": 53\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 19.57,\n        \"deg\": 270\n    },\n    \"clouds\": {\n        \"all\": 0\n    },\n    \"dt\": 1678798694,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2041230,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
 				}
 			]
 		}
@@ -220,7 +221,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "da96134f-ff2e-4511-a2c8-07d459b3b13a",
+				"id": "0b0aebc6-ba60-4a3e-b1a3-6160526e252c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -230,7 +231,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "66521aa3-c49e-41f8-ac75-8a0a31427ce8",
+				"id": "47ba870f-6e3e-4e49-8477-29bf1866fe4c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -240,36 +241,36 @@
 	],
 	"variable": [
 		{
-			"id": "0afb642f-16db-4f13-b8af-6159eefe98cb",
+			"id": "63e9f50a-7bd7-4fba-8b9c-c98319b267ac",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "f005c736-45b0-4c65-a1e5-a54269c6e27c",
+			"id": "38b7aef7-9878-4d17-af73-bbd615252061",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "4e2eabf1-e90f-4266-b3ac-6c188276951d",
+			"id": "636c05cc-01a9-4046-8ba8-9a7686fd6204",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "8d8f5827-8837-4e24-bd0f-f28c4a545cf7",
+			"id": "6c712b87-ad5e-4da4-af54-62e6485a06b6",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "8cc892bb-fca1-4cff-8c87-aca25ec135ed",
+			"id": "0ac64a70-1103-405a-8070-64173e034284",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "d9bd2574-fb7f-449d-b74d-48dfc46c9476",
+			"id": "48116308-6385-48e1-8c87-8a55eb187c71",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
