@@ -18,7 +18,7 @@
 							"{",
 							"    let result = pm.response.json(); // get result",
 							"    let current_temp = result.main.temp; // get current weather (Far.)",
-							"    pm.environment.set(\"temp\", current_temp); // store it in envs",
+							"    pm.environment.set(\"temp\", current_temp); // store temp in envs",
 							"    pm.environment.set(\"weather_icon\", result.weather.icon); // store icon in envs",
 							"});",
 							"",
@@ -238,36 +238,36 @@
 	],
 	"variable": [
 		{
-			"id": "d876d376-0a17-4549-ad7e-ca9eb0422787",
+			"id": "901e12ea-aa37-428c-9fb6-681b2f2a39f4",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "b9a1ca59-520c-45dd-a746-b1cd0873229c",
+			"id": "b248f6d1-0c21-4580-9a22-f79535a73903",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "42e71d66-9d63-4122-b94c-75bda40da174",
+			"id": "aac44228-695c-4913-84f1-ae44ed99d92e",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "79dd3610-e354-40bc-9a41-d70368e2376f",
+			"id": "14a32e3c-9f57-428d-bae5-4ca2bf31ffab",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "59dedd66-e54a-4540-a989-f56e28e76b1a",
+			"id": "282b0b25-e1e3-4b8d-9518-98ea4431e97b",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "ad787110-ad8b-4877-9db2-efbadccfa797",
+			"id": "408f6c34-24fd-41e2-a86a-eabfae6a356d",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
