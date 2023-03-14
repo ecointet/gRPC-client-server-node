@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "c0358480-52f2-44e0-be10-745ee2c6fe24",
 		"name": "Weather API by ecointet",
-		"description": "A Full API Collection to get a city temperature (depending of another city)",
+		"description": "A Full API Collection to get a city temperature (depending of another city).\n\n**Instant Weather** from any country in the World (ex: Paris, FR)\n\n<img src=\"https://content.pstmn.io/55ea49a5-9a87-40ff-aeec-d75b06f4fe43/aW1hZ2UucG5n\" alt=\"\" height=\"159\" width=\"148\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "067c5db2-4692-44ed-add9-6ee874b67a21",
+			"id": "bcf50603-5311-46f2-bf87-3b9c56b4d3b6",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "5b8c104b-c902-4f89-8893-902a23e95fc7",
+			"id": "6aca79af-23d6-4d13-a395-accaafa2ef7b",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "6d54e879-ad2a-455a-9c97-5be6c4bd2bbe",
+			"id": "e9eecc3e-5ebc-4662-b492-d68bb1d4241e",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
