@@ -73,7 +73,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{city}}&units=imperial",
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{APIKEY}}&q={{location}}&units=imperial",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -92,7 +92,7 @@
 						},
 						{
 							"key": "q",
-							"value": "{{city}}"
+							"value": "{{location}}"
 						},
 						{
 							"key": "units",
@@ -171,18 +171,18 @@
 	],
 	"variable": [
 		{
-			"id": "faac89dc-be5d-4c9e-8a9e-0c9de91ca1e3",
+			"id": "68ba1e3e-d6a0-4dcd-a362-7d2812aede94",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "0e83c86e-980f-42c6-9866-9e2cc19965fd",
+			"id": "da8ceb77-d212-45ab-a732-5fbdd1d2a45f",
 			"key": "city",
 			"value": "Paris, FR",
 			"type": "string"
 		},
 		{
-			"id": "2fc334ab-4157-4a36-8a56-a678c8094bb7",
+			"id": "53619734-61f3-4c1f-b8b6-2aeac2341db5",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
