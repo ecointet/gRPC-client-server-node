@@ -177,7 +177,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 14 Mar 2023 13:54:16 GMT"
+							"value": "Tue, 14 Mar 2023 14:23:27 GMT"
 						},
 						{
 							"key": "Content-Type",
@@ -185,7 +185,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "516"
+							"value": "573"
 						},
 						{
 							"key": "Connection",
@@ -193,7 +193,7 @@
 						},
 						{
 							"key": "X-Cache-Key",
-							"value": "/data/2.5/weather?q=paris,%20fr&units=imperial"
+							"value": "/data/2.5/weather?q=san%20francisco,%20usa&units=imperial"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -210,7 +210,7 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"coord\": {\n        \"lon\": 2.3488,\n        \"lat\": 48.8534\n    },\n    \"weather\": [\n        {\n            \"id\": 520,\n            \"main\": \"Rain\",\n            \"description\": \"light intensity shower rain\",\n            \"icon\": \"09d\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 50.23,\n        \"feels_like\": 47.97,\n        \"temp_min\": 45.37,\n        \"temp_max\": 52.25,\n        \"pressure\": 1008,\n        \"humidity\": 64\n    },\n    \"visibility\": 10000,\n    \"wind\": {\n        \"speed\": 21.85,\n        \"deg\": 260,\n        \"gust\": 34.52\n    },\n    \"rain\": {\n        \"1h\": 0.49\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1678801739,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2012208,\n        \"country\": \"FR\",\n        \"sunrise\": 1678774026,\n        \"sunset\": 1678816373\n    },\n    \"timezone\": 3600,\n    \"id\": 2988507,\n    \"name\": \"Paris\",\n    \"cod\": 200\n}"
+					"body": "{\n    \"coord\": {\n        \"lon\": -122.4194,\n        \"lat\": 37.7749\n    },\n    \"weather\": [\n        {\n            \"id\": 501,\n            \"main\": \"Rain\",\n            \"description\": \"moderate rain\",\n            \"icon\": \"10n\"\n        },\n        {\n            \"id\": 701,\n            \"main\": \"Mist\",\n            \"description\": \"mist\",\n            \"icon\": \"50n\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 55.33,\n        \"feels_like\": 54.88,\n        \"temp_min\": 53.85,\n        \"temp_max\": 57.02,\n        \"pressure\": 1004,\n        \"humidity\": 92\n    },\n    \"visibility\": 9656,\n    \"wind\": {\n        \"speed\": 16.11,\n        \"deg\": 140,\n        \"gust\": 40.29\n    },\n    \"rain\": {\n        \"1h\": 2.92\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1678803264,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2017837,\n        \"country\": \"US\",\n        \"sunrise\": 1678803755,\n        \"sunset\": 1678846522\n    },\n    \"timezone\": -25200,\n    \"id\": 5391959,\n    \"name\": \"San Francisco\",\n    \"cod\": 200\n}"
 				}
 			]
 		}
@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "a3024034-0ff5-499f-80be-3a2467b622c8",
+			"id": "3f9bef2a-8bcd-4213-b773-c416103822ed",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "cbe4a590-3f9a-4314-b76c-408a10b8dfd3",
+			"id": "cb8636c1-03e5-4442-91ee-e267fb3f741c",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "6e3af42c-f3a4-4878-a52b-10186adb2c95",
+			"id": "f18ffc50-92e4-4e0d-8c7a-0400a337ec2c",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "87ce9b2f-40b6-4d3e-80e6-db2bb492000c",
+			"id": "d7b59086-c605-4f79-9945-96666abb21cf",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "de54c2f4-724b-48cd-9f9b-7c5d5e1c024c",
+			"id": "a6a6dec4-208a-42d8-a97f-33a0fdc116ef",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "4500c8e2-9c1e-4389-b624-7e1b122d41b7",
+			"id": "bcb6e1e3-f9fe-4ca7-84c0-78a0db4ca7eb",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
