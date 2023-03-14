@@ -26,7 +26,7 @@
 							"pm.test(\"Temperature value\", function () //Test Range",
 							"{",
 							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // minus temp is rare",
-							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // high temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // higher temp is rare",
 							"});",
 							"",
 							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\"))",
@@ -240,36 +240,36 @@
 	],
 	"variable": [
 		{
-			"id": "0b64f69b-19be-4bf9-9c1a-e3c38e4050a9",
+			"id": "0052e9eb-bddb-437b-b09f-8eb388384d43",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "5035ca50-e3aa-4ec5-ad38-fbfbc626be8f",
+			"id": "af19fb5b-bb4e-45f6-b9f0-4f19a5b8c1fd",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "fdf0a830-8183-473d-9f7d-cc581eeb23fd",
+			"id": "d12a9f3a-016d-47c3-a826-247c0ba30a8b",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "4064e98f-a675-4331-a768-7b48fcced568",
+			"id": "0cfea59c-81c2-475c-b3d6-c14934432cd6",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "74cf0a68-3afb-4751-aa86-9bc6a9369446",
+			"id": "57df2b7e-91fd-4e5d-b5ff-08a77a4e33d1",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "a3d142e6-b965-4227-862d-7a05b0fa502b",
+			"id": "7d4d00c7-d6d2-4552-8ffb-05c9d6feb79f",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
