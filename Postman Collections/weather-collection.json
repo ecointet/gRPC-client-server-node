@@ -47,22 +47,21 @@
 							"    var template = `",
 							"    <table bgcolor=\"#FFFFFF\">",
 							"        <tr>",
-							"            <th>Name</th>",
-							"            <th>Email</th>",
+							"            <th>City</th>",
+							"            <th>Temperature</th>",
 							"        </tr>",
 							"",
-							"        {{#each response}}",
 							"            <tr>",
-							"                <td>{{name}}</td>",
+							"                <td>{{city}}</td>",
 							"                <td>{{email}}</td>",
 							"            </tr>",
-							"        {{/each}}",
+							"",
 							"    </table>",
 							"`;",
 							"",
 							"pm.visualizer.set(template, {",
 							"    // Pass the response body parsed as JSON as `data`",
-							"    response: pm.response.json()",
+							"    city: pm.collectionVariables.get(\"city\")",
 							"});",
 							"    if (newCountry)",
 							"    {",
@@ -235,36 +234,36 @@
 	],
 	"variable": [
 		{
-			"id": "97071427-084e-4e0f-a40f-d4987d74eab6",
+			"id": "efd74045-bbd7-4952-ae11-a6c4525a17ae",
 			"key": "APIKEY",
 			"value": "cba91d842d23631b5efcdeefd17f7678"
 		},
 		{
-			"id": "b3cbbe10-eaed-4555-b496-ce31a5f6ffa3",
+			"id": "3bad7d31-0059-4405-a369-140db161a34c",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "5e4e5664-437b-4213-826f-3015cda54eca",
+			"id": "b4f08d87-af34-4b00-af58-81c8f3477f0d",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "5218b3a9-7832-4c32-95c1-df6d1c8494e0",
+			"id": "36dd6684-9484-4241-914e-2d746cff1b0e",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "11431da2-35f8-40d5-b1a8-a30f88174b5f",
+			"id": "a2b3a27c-8fff-4c4c-b51c-0c66ed2fc391",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "5e61fa70-30da-4cce-ae33-28839b5fda87",
+			"id": "c017ff3f-0cef-4bbe-aaa5-d7d9c8d04839",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
