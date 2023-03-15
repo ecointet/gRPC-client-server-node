@@ -129,7 +129,7 @@
 						}
 					]
 				},
-				"description": "Simple way to get the exact temperature from a city (ex: Paris, FR)\n\nThe default city can be configured in the Collection Variables, or overwritted.\n\n<img src=\"https://content.pstmn.io/6754ea92-9470-46b8-8f39-f2b234ea4642/aW1hZ2UucG5n\" alt=\"Result%20in%20visualizer\" height=\"139\" width=\"320\">"
+				"description": "Simple way to get the exact temperature from a city (ex: Paris, FR)\n\nThe default city can be configured in the Collection Variables.\n\n<img src=\"https://content.pstmn.io/6754ea92-9470-46b8-8f39-f2b234ea4642/aW1hZ2UucG5n\" alt=\"Result%20in%20visualizer\" width=\"320\" height=\"139\">"
 			},
 			"response": [
 				{
@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "fdee6709-83e9-424b-a59d-568cc9ca1cc0",
+			"id": "c0b73f37-a51d-413c-8ed8-fe61b3385a09",
 			"key": "APIKEY",
 			"value": "<APIKEY>"
 		},
 		{
-			"id": "801e9725-8939-48f6-8955-ea7b5bbf33ca",
+			"id": "49e68886-6d33-43f6-a790-0de681bdaabc",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "ec103e5d-5858-4e0f-828e-1326972f0f83",
+			"id": "fe6dd82c-8d6b-465a-bde8-63f9c2ac6ae0",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "d8d6e4e7-7572-4d14-809b-1926dcbc70a9",
+			"id": "bd417028-9b62-4ff3-bdc2-2173e2b5c312",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "57a3374b-3258-4a7f-a842-b6f6d93f669c",
+			"id": "f1782b65-91df-48ea-a849-e63f164e607c",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
 		},
 		{
-			"id": "54709b43-5367-4fd0-afc2-0b0a87254500",
+			"id": "ef3f1a18-be17-4103-9721-6ff204f67982",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
