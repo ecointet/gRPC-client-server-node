@@ -213,6 +213,132 @@
 					"body": "{\n    \"coord\": {\n        \"lon\": -122.4194,\n        \"lat\": 37.7749\n    },\n    \"weather\": [\n        {\n            \"id\": 501,\n            \"main\": \"Rain\",\n            \"description\": \"moderate rain\",\n            \"icon\": \"10n\"\n        },\n        {\n            \"id\": 701,\n            \"main\": \"Mist\",\n            \"description\": \"mist\",\n            \"icon\": \"50n\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 55.33,\n        \"feels_like\": 54.88,\n        \"temp_min\": 53.85,\n        \"temp_max\": 57.02,\n        \"pressure\": 1004,\n        \"humidity\": 92\n    },\n    \"visibility\": 9656,\n    \"wind\": {\n        \"speed\": 16.11,\n        \"deg\": 140,\n        \"gust\": 40.29\n    },\n    \"rain\": {\n        \"1h\": 2.92\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1678803264,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2017837,\n        \"country\": \"US\",\n        \"sunrise\": 1678803755,\n        \"sunset\": 1678846522\n    },\n    \"timezone\": -25200,\n    \"id\": 5391959,\n    \"name\": \"San Francisco\",\n    \"cod\": 200\n}"
 				}
 			]
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?appid={{WEATHER_APIKEY}}&q={{location}}&units=imperial",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8dac3dcb-b545-48ec-a210-64edfd35cf5b",
+						"exec": [
+							"pm.test(\"Looking for Temperature\", function () //Test Values",
+							"{",
+							"    let result = pm.response.json(); // get result",
+							"    let current_temp = result.main.temp; // get current weather (Far.)",
+							"",
+							"    pm.environment.set(\"temp\", current_temp); // store temp in envs",
+							"    pm.environment.set(\"weather_icon\", result.weather[0].icon); // store icon in envs  ",
+							"});",
+							"",
+							"pm.test(\"Temperature is \"+pm.environment.get(\"temp\") +\"F in \"+pm.environment.get(\"location\"), function () //Test Range",
+							"{",
+							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // lower temp is rare",
+							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // higher temp is rare",
+							"});",
+							"",
+							"if (pm.environment.get(\"location\") == pm.collectionVariables.get(\"city\")) //Specific Use Case",
+							"{",
+							"    if (pm.environment.get(\"temp\") > pm.collectionVariables.get(\"fahrenheit\"))",
+							"        return displayTemp(pm.collectionVariables.get(\"city1\"));",
+							"    return displayTemp(pm.collectionVariables.get(\"city2\"));",
+							"}",
+							"displayTemp(null);",
+							"",
+							"function displayTemp(newCountry) //Render Results",
+							"{",
+							"    let temp = pm.environment.get(\"temp\");",
+							"    if (temp == undefined || Number.isInteger(temp)) return;",
+							"    pm.collectionVariables.set(\"temperature\", temp);",
+							"    console.log(\"The Temperature is \"+temp+\"F in \"+pm.environment.get(\"location\"));",
+							"    ",
+							"    // Set visualizer",
+							"    pm.visualizer.set(BuildTemplate(), {",
+							"        city: pm.collectionVariables.get(\"city\"),",
+							"        temperature: pm.collectionVariables.get(\"temperature\"),",
+							"        icon: pm.environment.get(\"weather_icon\")",
+							"    });",
+							"",
+							"    if (newCountry)",
+							"    {",
+							"        pm.environment.set(\"location\", newCountry);",
+							"        postman.setNextRequest(\"Get Current Weather\");",
+							"    }",
+							"}",
+							"",
+							"function BuildTemplate() //Design UX",
+							"{",
+							"    var template = `",
+							"    <table bgcolor=\"#FFFFFF\">",
+							"        <tr>",
+							"            <th>City</th>",
+							"            <th>Temperature</th>",
+							"            <th>Weather</th>",
+							"        </tr>",
+							"            <tr>",
+							"                <td>{{city}}</td>",
+							"                <td>{{temperature}} °F</td>",
+							"                <td><img src=\"https://openweathermap.org/img/wn/{{icon}}.png\" height=\"50px\"/></td>",
+							"            </tr>",
+							"    </table>`;",
+							"",
+							"    return template;",
+							"}",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fe400ccc-c772-4026-a694-2ffead4c01c4",
+						"exec": [
+							"if (!pm.environment.has('location'))",
+							"    pm.environment.set(\"location\", pm.variables.get(\"city\"));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "fda23ca3-ff90-43c7-ab26-e2f03ab880be",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?appid={{WEATHER_APIKEY}}&q={{location}}&units=imperial",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "{{WEATHER_APIKEY}}"
+						},
+						{
+							"key": "q",
+							"value": "{{location}}"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -239,36 +365,36 @@
 	],
 	"variable": [
 		{
-			"id": "c0923daa-5374-44e8-ac36-d2574ca454bf",
+			"id": "c21a57c6-d905-4c2a-a9a9-b00181a2f912",
 			"key": "APIKEY",
 			"value": "{{WEATHER_APIKEY}}"
 		},
 		{
-			"id": "f8ca7bd2-ce2d-4bcc-a978-a7f4a49da491",
+			"id": "99e5b291-ec46-456b-b7f9-72832fe34839",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "ed624973-c86a-44c4-b5b3-befa2aa67e71",
+			"id": "7b17b109-d0c4-42fd-b60f-cdee27f2e9ee",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "cbc603ba-00e5-4b0e-8684-1422f210fe6d",
+			"id": "8d03a697-8ed1-4897-9a6d-26f547ceaeea",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "07943978-24aa-40e4-a77e-266c50a75226",
+			"id": "a87040f2-1ecd-4fd0-91d4-8ca23435dff2",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
 		},
 		{
-			"id": "c726e9be-54a9-4096-9ada-25150630b933",
+			"id": "37b75c08-f6f7-46a6-8761-bbd6de93a585",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
