@@ -219,7 +219,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5d589ca9-1cd3-4c80-acfb-aebd76054b2c",
+				"id": "8136a5c7-9054-4448-bee0-f3b65fd0ca68",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -229,7 +229,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "88dd8662-2c9c-45bf-a6a4-3fb9e23a1964",
+				"id": "036fb89a-ffdb-4877-bb70-9b856182548e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "819ce513-a701-447d-9ee8-3bd45f86265d",
+			"id": "10cb244c-4c45-4cfd-b2c9-87899aa07e0b",
 			"key": "APIKEY",
 			"value": "<APIKEY>"
 		},
 		{
-			"id": "784fe438-6e97-4179-980d-5b629d44cb14",
+			"id": "51d436fc-cd70-42ee-8a39-c42287a2c603",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "0f1d5b6d-e54e-4238-91bc-b8fd161bad7d",
+			"id": "5da19112-85eb-4497-9a09-2329216bcd78",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "cd879a90-0fb9-4c20-b5d2-6fe0f9226699",
+			"id": "52fc7aa4-f63f-4807-947b-c46a1de58bb6",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "13943eeb-56ee-47cb-b8d8-b28e01ad80a4",
+			"id": "3591159b-d34c-4484-96b0-37c6e4ee0663",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "14321bfe-7f0f-4cfe-a794-19fdafbc5e51",
+			"id": "921b7703-43f5-4316-b314-392d7bd66b43",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
