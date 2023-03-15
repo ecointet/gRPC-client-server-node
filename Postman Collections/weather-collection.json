@@ -23,7 +23,7 @@
 							"    pm.environment.set(\"weather_icon\", result.weather[0].icon); // store icon in envs  ",
 							"});",
 							"",
-							"pm.test(\"Temperature: \"+pm.environment.get(\"temp\") +\"F in \"+pm.environment.get(\"location\"), function () //Test Range",
+							"pm.test(\"Temperature is \"+pm.environment.get(\"temp\") +\"F in \"+pm.environment.get(\"location\"), function () //Test Range",
 							"{",
 							"    pm.expect(pm.environment.get(\"temp\")).to.greaterThan(0); // lower temp is rare",
 							"    pm.expect(pm.environment.get(\"temp\")).to.below(100); // higher temp is rare",
@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "4cc6db16-2b59-4738-bf3f-543da40ebd38",
+			"id": "31e7d835-18d3-438d-8023-141b4598f904",
 			"key": "APIKEY",
 			"value": "<APIKEY>"
 		},
 		{
-			"id": "f5a57242-2fe6-4a7c-a362-624f3673e222",
+			"id": "e56c2bd5-6c9b-4129-858f-e23cdf103c69",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "c9d689a4-c0c1-4263-a123-3edde2489a54",
+			"id": "1b33416a-2ed6-4e63-8d4c-22214e7f32e7",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
 		},
 		{
-			"id": "f857a132-540b-4e31-a26c-13e2db997a35",
+			"id": "797ca6d0-748b-4bc2-bd57-97c3e8ff982e",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "b9217d87-c4a8-4315-89d4-606ca65c0eff",
+			"id": "7823709b-2ecb-4679-878f-3983e6223f90",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "f27a1ce1-cd72-4b0a-8aad-b5ca01518db5",
+			"id": "711dd789-f193-4d30-b021-0df430522c49",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
