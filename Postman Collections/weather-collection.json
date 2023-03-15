@@ -239,36 +239,36 @@
 	],
 	"variable": [
 		{
-			"id": "091ebcc8-e795-4b01-a625-c2c09427c831",
+			"id": "17d596f7-08a3-4bf6-914d-63b432590093",
 			"key": "APIKEY",
 			"value": "{{WEATHER_APIKEY}}"
 		},
 		{
-			"id": "b1014e99-93bd-4cc7-8689-cdd4294dc1a4",
+			"id": "66990954-70f2-442c-b280-893ac33b956c",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "c45c0ddb-1299-4b71-b6d5-0f5800ba5783",
+			"id": "42f5ab6a-47f5-41cf-a3f1-b70e1a8f8c4e",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "05059228-768b-4292-afb2-2dc81c9c38bd",
+			"id": "a4e9b627-544d-497e-be99-272a35052e7c",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "1d21e632-6efe-44d6-a1ba-e1960d250d9e",
+			"id": "845eb345-e3af-4d6a-a75b-6a805cccb4d2",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
 		},
 		{
-			"id": "fd100389-031d-4180-9c94-cd770f78f07d",
+			"id": "0b1781e0-207b-4ff5-87f9-46a1951f7c34",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
