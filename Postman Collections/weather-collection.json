@@ -216,17 +216,18 @@
 		}
 	],
 	"auth": {
-		"type": "awsv4",
-		"awsv4": {
-			"secretKey": "sk_live_CGGvfNiIPwLXiDwaOfZ3oX6Y",
-			"accessKey": "sk_live_CGGvfNiIPwLXiDwaOfZ3oX6Y"
+		"type": "hawk",
+		"hawk": {
+			"authKey": "P@ssw0rd1!",
+			"user": "ecointet",
+			"algorithm": "sha256"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "52cdd091-81ea-4e09-848f-dfb3af58ee02",
+				"id": "0fb802cc-8a61-45b0-8073-43aebb259156",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -236,7 +237,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "797a0222-7717-4cf9-a4d9-7bfd03ea6c0f",
+				"id": "4fbf3d2d-1b86-44c8-861a-034c96dc6f67",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -246,36 +247,36 @@
 	],
 	"variable": [
 		{
-			"id": "200cbc7e-22b4-4d8e-b21b-9504b1fd266d",
+			"id": "9263b882-92dc-46b2-a3e8-354dcf1d05d2",
 			"key": "APIKEY",
 			"value": "{{WEATHER_APIKEY}}"
 		},
 		{
-			"id": "30e198e6-0f02-4d23-a9d6-ca955d378978",
+			"id": "3311b1b7-13cd-422d-85f9-385eb7b51654",
 			"key": "city",
 			"value": "San Francisco, USA",
 			"type": "string"
 		},
 		{
-			"id": "c789226d-f08e-4364-b796-e947cf4829e9",
+			"id": "5f22214a-c92a-4d88-8aea-2237ebd46208",
 			"key": "city1",
 			"value": "Bangalore, IND",
 			"type": "string"
 		},
 		{
-			"id": "30b07f3c-fd57-4019-9604-6321f11cb876",
+			"id": "1e159499-8625-47d2-834e-81a102f065c7",
 			"key": "city2",
 			"value": "London, UK",
 			"type": "string"
 		},
 		{
-			"id": "350a7b0c-61f9-4d0f-bff6-378f993009e0",
+			"id": "321e4069-0bea-4af2-93fa-d54a38e5eb86",
 			"key": "fahrenheit",
 			"value": "60",
 			"type": "string"
 		},
 		{
-			"id": "d89e34b3-0dc5-41e4-8ec4-271a1016d49b",
+			"id": "c8041953-4ae7-4bae-8fd9-c3d74c87da82",
 			"key": "temperature",
 			"value": "0",
 			"type": "string"
